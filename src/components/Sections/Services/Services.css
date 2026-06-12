@@ -1,0 +1,407 @@
+/* --- SAYFA YERLEŞİMİ --- */
+.services-page {
+    padding-top: 150px;
+}
+
+.services-hero-margin {
+    margin-bottom: 120px;
+}
+
+.services-category-wrapper {
+    position: relative;
+    margin-bottom: 220px;
+}
+
+/* --- GRID YAPISI --- */
+.category-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Sol tarafın komple yazı ve görselle beraber ekran boyunca kaymasını sağlayan sticky kapsayıcı */
+.category-image-sticky-wrapper {
+    position: sticky;
+    top: 100px;
+    /* Ekranın üstünden bırakılacak şık boşluk */
+    height: max-content;
+    /* Sadece içindeki yazı ve görsel kadar yer kaplar */
+}
+
+/* --- GÖRSELİN TAM TEPESİNDE DURAN BAŞLIK (image_de99dc.jpg ile birebir) --- */
+.category-bg-title {
+    font-size: 6rem;
+    color: var(--hexa-card-bg);
+    /* Yarı şeffaf premium doku */
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 24px;
+    /* Yazı ile görselin tavanı arasındaki kusursuz mesafe */
+    letter-spacing: -3px;
+    user-select: none;
+    line-height: 0.9;
+}
+
+.theme-inverted .category-bg-title {
+    color: rgba(0, 0, 0, 0.08);
+}
+
+.category-index {
+    font-size: 1.2rem;
+    background: var(--hexa-card-bg);
+    border: 1px solid var(--hexa-card-border);
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: var(--hexa-font-dim);
+}
+
+/* --- GÖRSEL KUTUSU --- */
+.category-image-box {
+    height: 520px;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    border: 1px solid var(--hexa-card-border);
+}
+
+.category-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.category-image-box:hover img {
+    transform: scale(1.02);
+}
+
+/* --- SAĞ LİSTE ALANI --- */
+.category-list-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-main-header {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    /* Sol taraftaki yazı hizasıyla dengelemek için */
+}
+
+.list-main-header h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var(--hexa-font-main);
+    letter-spacing: -0.5px;
+    margin-bottom: 12px;
+}
+
+.category-desc-text {
+    color: var(--hexa-font-dim);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+.sub-category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: var(--hexa-accent);
+    /* Neon renginiz */
+    transition: color 0.3s ease;
+}
+
+/* Hover olduğunda ikonun renginin başlık yazısıyla uyumlu olması için */
+.sub-category-title-link:hover .sub-category-icon {
+    color: var(--hexa-bg);
+}
+
+/* --- TIKLANABİLİR ALT BAŞLIKLAR --- */
+.sub-category-group {
+    margin-top: 45px;
+}
+
+.sub-category-title-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 12px;
+    transition: color var(--transition-fast);
+}
+
+.sub-category-title-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--hexa-accent);
+    z-index: -1;
+    transition: height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    border-radius: 6px;
+}
+
+.sub-category-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--hexa-font-main);
+    letter-spacing: 0.2px;
+    transition: color var(--transition-fast);
+}
+
+.sub-arrow {
+    color: var(--hexa-accent);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.sub-category-title-link:hover::before {
+    height: 100%;
+}
+
+.sub-category-title-link:hover .sub-category-title {
+    color: var(--hexa-bg);
+}
+
+.sub-category-title-link:hover .sub-arrow {
+    color: var(--hexa-bg);
+    transform: translateX(4px);
+}
+
+/* --- LİNKLER VE HOVER DOLGU EFEKTİ --- */
+.service-links {
+    border-top: 1px solid var(--hexa-card-border);
+}
+
+.service-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 12px;
+    border-bottom: 1px solid var(--hexa-card-border);
+    text-decoration: none;
+    color: var(--hexa-font-main);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color var(--transition-fast);
+}
+
+.service-list-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--hexa-accent);
+    z-index: -1;
+    transition: height 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.item-text {
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.item-arrow {
+    position: relative;
+    z-index: 2;
+    color: var(--hexa-font-dim);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.service-list-item:hover::before {
+    height: 100%;
+}
+
+.service-list-item:hover {
+    color: var(--hexa-bg);
+}
+
+.service-list-item:hover .item-arrow {
+    color: var(--hexa-bg);
+    transform: translateX(8px);
+}
+
+/* --- YENİ: EKLE/ÇIKAR BUTONU ÖZEL TASARIMI --- */
+.service-add-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 255, 209, 0.08);
+    /* Hafif neon cam dokusu */
+    border: 1px solid rgba(0, 255, 209, 0.35);
+    /* Çerçeveyi belirginleştirdik */
+    color: var(--hexa-font-main);
+    /* Silik renk yerine ana parlak renk */
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    /* Daha kalın ve tok bir görünüm */
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(4px);
+}
+
+/* Butonun kendi hover durumu */
+.service-add-btn:hover {
+    background: var(--hexa-accent);
+    color: var(--hexa-bg);
+    border-color: var(--hexa-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 209, 0.25);
+}
+
+/* Sepetteyken (Çıkar) Görünümü */
+.service-add-btn.in-cart {
+    background: rgba(255, 77, 77, 0.08);
+    border: 1px solid rgba(255, 77, 77, 0.4);
+    color: #ff4d4d;
+}
+
+.service-add-btn.in-cart:hover {
+    background: #ff4d4d;
+    color: #ffffff;
+    border-color: #ff4d4d;
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.25);
+}
+
+/* AKILLI KONTRAST: Satır üzerine gelindiğinde satır neon yeşile döndüğü için, 
+   butonun içinde kaybolmaması adına renklerini tersine çeviriyoruz */
+.service-list-item:hover .service-add-btn:not(.in-cart) {
+    background: var(--hexa-bg);
+    color: var(--hexa-accent);
+    border-color: transparent;
+}
+
+.service-list-item:hover .service-add-btn.in-cart {
+    background: var(--hexa-bg);
+    color: #ff4d4d;
+    border-color: transparent;
+}
+
+/* Satır hover modundayken butonun üstüne gidilirse */
+.service-list-item:hover .service-add-btn:not(.in-cart):hover {
+    background: var(--hexa-font-main);
+    color: var(--hexa-bg);
+    transform: scale(1.05);
+}
+
+.sub-category-group-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.sub-category-group-link:hover {
+    border-color: var(--hexa-accent);
+}
+
+.sub-category-group-link h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.group-explore-text {
+    font-size: 0.9rem;
+    color: var(--hexa-font-dim);
+    transition: color 0.3s ease;
+}
+
+.sub-category-group-link:hover .group-explore-text {
+    color: var(--hexa-accent);
+}
+
+/* --- RESPONSIVE AYARLAR --- */
+/* =========================================
+   MOBİL VE TABLET UYARLAMASI (Services.css)
+========================================= */
+@media (max-width: 1024px) {
+    .services-category-wrapper {
+        margin-bottom: 120px;
+    }
+
+    .category-bg-title {
+        font-size: clamp(3.5rem, 8vw, 5rem);
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .category-image-sticky-wrapper {
+        position: relative;
+        top: 0;
+    }
+
+    .category-image-box {
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero-margin {
+        margin-bottom: 80px;
+    }
+
+    .category-bg-title {
+        font-size: clamp(2.8rem, 10vw, 4rem);
+        margin-bottom: 16px;
+    }
+
+    .category-image-box {
+        height: 300px;
+    }
+
+    .list-main-header h3 {
+        font-size: 2rem;
+    }
+
+    .sub-category-title {
+        font-size: 1.2rem;
+    }
+
+    .service-list-item {
+        /* Mobilde yan yana sığmayacağı için alt alta dizilim */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 0;
+    }
+
+    .service-list-item>div {
+        /* Fiyat ve Ekle butonu grubunu tam genişliğe yay */
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .item-text {
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+
+    .service-add-btn {
+        padding: 8px 20px;
+    }
+}

@@ -1,0 +1,191 @@
+/* --- FOOTER ANA KAPSAYICI --- */
+.hexa-premium-footer {
+    background-color: var(--hexa-bg);
+    /* Tamamen zifiri karanlık, siber hissiyat */
+    color: var(--hexa-font-main);
+    padding-top: 5vw;
+    position: relative;
+    overflow: hidden;
+    transition: background-color var(--transition-theme), border-color var(--transition-theme), color var(--transition-theme);
+}
+
+/* ==========================================
+   ÜST KISIM: GRID LİNK YAPISI
+========================================== */
+.footer-grid-container {
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    /* Satırlar arası devasa boşluk (Awwwards stili) */
+}
+
+/* Satır Düzeni: Sol taraf başlık, Sağ taraf 4'lü kolonlar */
+.footer-row {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    gap: 5vw;
+    align-items: flex-start;
+}
+
+/* Sol Başlık (Örn: VISUAL AND MARKETING) */
+.footer-row-title h3 {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--hexa-font-main);
+    letter-spacing: 0.5px;
+    transition: background-color var(--transition-theme), border-color var(--transition-theme), color var(--transition-theme);
+}
+
+/* Sağ Kolonlar (4 eşit parça) */
+.footer-row-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+/* Kolon Başlıkları (Örn: Brand Strategy ↗) */
+.footer-col h4 {
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--hexa-font-main);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color var(--transition-fast);
+    cursor: default;
+}
+
+.col-arrow {
+    color: var(--hexa-font-dim);
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.footer-col:hover h4 {
+    color: var(--hexa-accent);
+}
+
+.footer-col:hover .col-arrow {
+    color: var(--hexa-accent);
+    transform: translate(3px, -3px);
+}
+
+/* Link Listeleri */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* Linkler arası rahat boşluk */
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: var(--hexa-font-dim);
+    /* Referanstaki gibi sönük gri */
+    font-size: 0.95rem;
+    transition: color var(--transition-fast);
+}
+
+.footer-col a:hover {
+    color: var(--hexa-font-main);
+    /* Üzerine gelince beyaza parlar */
+}
+
+/* ==========================================
+   ALT KISIM: DEVASA YAZI & SOSYAL LİNKLER
+========================================== */
+/* --- ALT KISIM: DEVASA YAZI & SOSYAL LİNKLER --- */
+.footer-bottom-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    /* Sosyal medya satırı için yer bırak */
+}
+
+/* Arkaplandaki "HEXA" Yazısı */
+.footer-massive-text {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* Diğer öğelerin arkasında kalmasını sağlar */
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.footer-massive-text span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 35vw;
+    /* Ekranı tam doldurması için oranlandı */
+    font-weight: 700;
+    /* RENGİ GÖZÜKÜR HALE GETİRDİK: %5 opaklık verdik */
+    color: var(--hexa-card-bg);
+    text-transform: uppercase;
+}
+
+/* Sosyal Medya Satırı */
+.footer-social-row {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    /* Yazının önünde durması için daha yüksek z-index */
+}
+
+.footer-social-row a {
+    color: var(--hexa-font-main);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.footer-social-row a:hover {
+    color: var(--hexa-accent);
+}
+
+/* ==========================================
+   MOBİL UYARLAMA
+========================================== */
+@media (max-width: 1200px) {
+    .footer-row {
+        grid-template-columns: 1fr;
+        /* Sol başlık üste geçer */
+        gap: 30px;
+    }
+
+    .footer-row-links {
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 kolon 2'ye düşer */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-row-links {
+        grid-template-columns: 1fr;
+        /* Mobilde her şey alt alta */
+        gap: 50px;
+    }
+
+    .footer-social-row {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        bottom: 20px;
+    }
+}

@@ -1,0 +1,110 @@
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--hexa-bg);
+    /* Senin CSS'indeki Midnight Blue */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Hafif bir gren/noise efekti (Apple ve premium ajansların sık kullandığı bir hile) */
+.preloader-noise {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.preloader-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    padding: 40px;
+}
+
+/* YAZIYI AŞAĞIDAN YUKARI MASKELEYEREK ÇIKARTMA HİLESİ */
+.preloader-text-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.preloader-brand {
+    font-size: 8vw;
+    /* Ekrana göre dinamik */
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: var(--hexa-font-main);
+    margin: 0;
+    line-height: 1;
+}
+
+.preloader-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid var(--hexa-card-border);
+    padding-top: 20px;
+}
+
+.preloader-status {
+    font-size: 0.9rem;
+    color: var(--hexa-font-dim);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.preloader-percentage {
+    font-size: 4rem;
+    font-weight: 500;
+    color: var(--hexa-accent);
+    /* Senin Turkuaz/Neon rengin */
+    line-height: 0.8;
+    font-feature-settings: "tnum";
+    /* Sayıların zıplamasını engeller */
+    font-variant-numeric: tabular-nums;
+}
+
+.text-dijital {
+    color: var(--hexa-accent);
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .preloader-brand {
+        font-size: 15vw;
+    }
+
+    .preloader-bottom {
+        left: 20px;
+        right: 20px;
+        bottom: 80px;
+    }
+
+    .preloader-percentage {
+        font-size: 3rem;
+    }
+
+    .preloader-status {
+        font-size: 0.75rem;
+        max-width: 150px;
+    }
+}

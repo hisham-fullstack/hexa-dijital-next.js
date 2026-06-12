@@ -1,0 +1,172 @@
+/* src/components/CtaSection/CtaSection.css */
+
+.hexa-cta-wrapper {
+    padding: 40px 20px 100px 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.hexa-cta-box {
+    position: relative;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 255, 209, 0.2);
+}
+
+/* Neon Parlama Efekti */
+.cta-glow-bg {
+    position: absolute;
+    top: -50%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(0, 255, 209, 0.15) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cta-content-left {
+    position: relative;
+    z-index: 1;
+    flex: 1.2;
+}
+
+.cta-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 255, 209, 0.1);
+    border: 1px solid rgba(0, 255, 209, 0.3);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.cta-heading {
+    font-size: clamp(2rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: var(--hexa-font-main);
+    line-height: 1.2;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--hexa-font-dim-hover);
+    max-width: 600px;
+    margin: 0;
+}
+
+.cta-text strong {
+    color: var(--hexa-font-main);
+    font-weight: 500;
+}
+
+/* Butonlar Alanı */
+.cta-action-right {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 0.8;
+    align-items: flex-end;
+}
+
+.cta-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 280px;
+    padding: 18px 32px;
+    background: var(--hexa-accent);
+    color: var(--hexa-bg);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 25px rgba(0, 255, 209, 0.2);
+}
+
+.cta-primary-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 255, 209, 0.35);
+}
+
+.cta-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 280px;
+    padding: 16px 32px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--hexa-card-border);
+    color: var(--hexa-font-main);
+    border-radius: 50px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================
+   MOBİL VE TABLET UYUMU (RESPONSIVE)
+========================================= */
+@media (max-width: 992px) {
+    .hexa-cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 30px;
+        /* Tablet ve mobil için daha kontrollü boşluk */
+        gap: 30px;
+    }
+
+    .cta-heading {
+        font-size: 1.8rem;
+    }
+
+    .cta-text {
+        font-size: 1rem;
+    }
+
+    .cta-action-right {
+        align-items: stretch;
+        /* Butonları kapsayıcı boyunca yay */
+        width: 100%;
+        flex: none;
+    }
+
+    .cta-primary-btn,
+    .cta-secondary-btn {
+        max-width: 100%;
+        /* Butonlar mobilde tam ekran */
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hexa-cta-box {
+        padding: 30px 20px;
+    }
+
+    .cta-heading {
+        font-size: 1.5rem;
+    }
+}

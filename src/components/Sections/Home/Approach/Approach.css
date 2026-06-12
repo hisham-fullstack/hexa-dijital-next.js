@@ -1,0 +1,185 @@
+.approach-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- ÜST KISIM (METİNLER) --- */
+.approach-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.approach-label {
+    flex: 1;
+}
+
+.approach-label p {
+    font-size: 36px;
+    color: var(--hexa-accent);
+    /* #00ffd1 yerine global değişken */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    transition: color var(--transition-theme);
+    /* Tema değişimini yumuşatır */
+}
+
+.approach-text {
+    flex: 3;
+}
+
+.approach-text h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.text-dark {
+    color: var(--hexa-font-main);
+    /* #EBEBEB yerine global değişken */
+    transition: color var(--transition-theme);
+    /* Tema değişimini yumuşatır */
+}
+
+.text-light {
+    color: var(--hexa-font-dim);
+    /* #50535B yerine global değişken */
+    /* Tema ve hover geçişi */
+    transition: color var(--transition-fast);
+}
+
+.text-light:hover {
+    color: var(--hexa-font-dim-hover);
+    /* #9a9a9a yerine global değişken */
+}
+
+/* --- ALT KISIM (İKONLAR VE HOVER EFEKTİ) --- */
+.approach-icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 140px;
+    height: 48px;
+}
+
+/* İkon Tasarımı */
+.svg-container {
+    width: 62px;
+    height: 62px;
+    color: var(--hexa-font-main);
+    /* #EBEBEB yerine global değişken */
+    /* Hem hover animasyonu hem tema geçişi */
+    transition: color var(--transition-theme), transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.icon-wrapper:hover .svg-container {
+    color: var(--hexa-accent);
+    /* #00ffee yerine global değişken */
+    transform: translateY(-8px) scale(1.1);
+}
+
+/* Çıkan Metin Tasarımı */
+.icon-text {
+    position: absolute;
+    top: 65px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--hexa-font-main);
+    /* #EBEBEB yerine global değişken */
+    text-align: center;
+    width: 160px;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+}
+
+.icon-wrapper:hover .icon-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- RESPONSIVE AYARLAR --- */
+@media (max-width: 1024px) {
+    .approach-text h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .approach-container {
+        gap: 60px;
+    }
+
+    .approach-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .approach-label p {
+        padding-top: 0;
+        font-size: 28px;
+        text-align: left;
+    }
+
+    .approach-text h2 {
+        font-size: 28px;
+    }
+
+    /* MOBİL İKON ALANI (YAN YANA ZORLAMA VE KÜÇÜLTME) */
+    .approach-icons-container {
+        flex-wrap: nowrap;
+        /* İkonların alt alta düşmesini engeller, yan yana dizer */
+        gap: 15px;
+        /* Aradaki devasa boşluk kapatıldı */
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-top: 20px;
+
+        /* Ekrana sığmayan ikonlar için yatay kaydırma */
+        overflow-x: auto;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        /* Firefox'ta scrollbar gizleme */
+    }
+
+    /* Chrome ve Safari'de scrollbar gizleme */
+    .approach-icons-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .icon-wrapper {
+        width: 70px;
+        /* Mobilde kapsayıcıyı iyice daralttık */
+        flex-shrink: 0;
+        /* İkonların ezilmesini önler */
+    }
+
+    .svg-container {
+        width: 32px;
+        /* Mobilde ikonlar çok daha minimal */
+        height: 32px;
+    }
+
+    .icon-text {
+        top: 45px;
+        font-size: 11px;
+        width: 80px;
+    }
+}

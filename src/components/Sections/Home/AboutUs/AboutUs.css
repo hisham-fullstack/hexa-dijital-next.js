@@ -1,0 +1,281 @@
+/* ==========================================================================
+   FLUID ACCORDION ABOUT SECTION (AboutUs.css)
+   ========================================================================== */
+
+.hx-accordion-about {
+    padding: 100px 20px;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hx-about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    /* Sağ taraf akordiyon için biraz daha geniş */
+    gap: 80px;
+    align-items: start;
+}
+
+/* =========================================
+   SOL: STICKY COL
+========================================= */
+.hx-about-sticky-col {
+    position: relative;
+    height: 100%;
+}
+
+.hx-sticky-content {
+    position: sticky;
+    top: 150px;
+    /* Header'ın altında kalacak şekilde boşluk */
+}
+
+.hx-meta-label {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--hexa-accent);
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(0, 255, 209, 0.3);
+    padding: 6px 16px;
+    border-radius: 50px;
+    background: rgba(0, 255, 209, 0.05);
+}
+
+.hx-massive-heading {
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+    font-weight: 700;
+    color: var(--hexa-font-main);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin: 0 0 30px 0;
+}
+
+.text-glow-accent {
+    color: var(--hexa-accent);
+    text-shadow: 0 0 40px rgba(0, 255, 209, 0.3);
+}
+
+.hx-sticky-desc {
+    font-size: 1.15rem;
+    color: var(--hexa-font-dim);
+    line-height: 1.6;
+    max-width: 90%;
+    margin: 0;
+}
+
+/* =========================================
+   SAĞ: FLUID ACCORDION
+========================================= */
+.hx-about-accordion-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.hx-accordion-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* Satırlar arası hafif boşluk */
+}
+
+.hx-accordion-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 0;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    background: transparent;
+}
+
+/* Hover veya Açık Durumu: Cam Dokusu Belirir */
+.hx-accordion-item:hover,
+.hx-accordion-item.active {
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom-color: transparent;
+    padding: 30px 30px;
+    /* İçeri doğru padding kazanarak şık bir kutuya dönüşür */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hx-accordion-item.active {
+    border-color: rgba(0, 255, 209, 0.2);
+    /* Sadece aktif olanda neon border */
+    background: linear-gradient(180deg, rgba(0, 255, 209, 0.03) 0%, rgba(15, 15, 15, 0) 100%);
+}
+
+.hx-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hx-header-left {
+    display: flex;
+    align-items: baseline;
+    gap: 24px;
+}
+
+.hx-acc-number {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--hexa-font-dim);
+    transition: color 0.3s ease;
+}
+
+.hx-acc-title {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 500;
+    color: var(--hexa-font-main);
+    margin: 0;
+    letter-spacing: -1px;
+    transition: color 0.3s ease;
+}
+
+.hx-acc-icon {
+    color: var(--hexa-font-dim);
+    transition: color 0.3s ease;
+}
+
+/* Aktif Durum Renk Geçişleri */
+.hx-accordion-item:hover .hx-acc-number,
+.hx-accordion-item.active .hx-acc-number {
+    color: var(--hexa-accent);
+}
+
+.hx-accordion-item:hover .hx-acc-title,
+.hx-accordion-item.active .hx-acc-title {
+    color: var(--hexa-font-main);
+}
+
+.hx-accordion-item.active .hx-acc-title {
+    color: var(--hexa-accent);
+}
+
+.hx-accordion-item:hover .hx-acc-icon,
+.hx-accordion-item.active .hx-acc-icon {
+    color: var(--hexa-accent);
+}
+
+/* İçerik Alanı */
+.hx-accordion-body {
+    overflow: hidden;
+}
+
+.hx-accordion-content-inner {
+    padding-top: 24px;
+    padding-left: 55px;
+    /* Başlıkla hizalamak için numara kadar boşluk */
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.hx-acc-body-icon {
+    color: var(--hexa-accent);
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.hx-acc-desc {
+    font-size: 1.1rem;
+    color: var(--hexa-font-dim);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* =========================================
+   RESPONSIVE DÜZEN
+========================================= */
+/* =========================================
+   RESPONSIVE DÜZEN (MOBİL VE TABLET)
+========================================= */
+@media (max-width: 1024px) {
+    .hx-about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .hx-sticky-content {
+        position: relative;
+        top: 0;
+    }
+
+    .hx-massive-heading {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hx-accordion-about {
+        padding: 100px 20px;
+        /* Mobilde ana boşluğu biraz kıstık, yan boşlukları koruduk */
+    }
+
+    /* Mobilde devasa başlığı ufalttık ki ekrandan taşmasın */
+    .hx-massive-heading {
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+    }
+
+    .hx-sticky-desc {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    /* Akordiyon (Açılır Liste) Mobil Optimizasyonu */
+    .hx-accordion-item {
+        padding: 24px 0;
+    }
+
+    .hx-accordion-item:hover,
+    .hx-accordion-item.active {
+        padding: 24px 20px;
+        border-radius: 16px;
+    }
+
+    .hx-header-left {
+        gap: 16px;
+    }
+
+    .hx-acc-number {
+        font-size: 1rem;
+    }
+
+    /* Kart başlığı mobilde çok büyük kalıp kötü kırılmasın diye küçülttük */
+    .hx-acc-title {
+        font-size: 1.6rem;
+    }
+
+    .hx-accordion-content-inner {
+        padding-left: 0;
+        /* İkonu ve yazıyı mobilde tam sola hizalıyoruz */
+        flex-direction: column;
+        /* İkon ve yazıyı mobilde alt alta alıyoruz */
+        gap: 12px;
+    }
+
+    .hx-acc-desc {
+        font-size: 0.95rem;
+        /* Paragraf boyutu mobilde daha okunaklı yapıldı */
+    }
+}
+
+/* Çok Küçük Ekranlar (iPhone SE vb.) için Ekstra Koruma */
+@media (max-width: 480px) {
+    .hx-massive-heading {
+        font-size: 2.2rem;
+    }
+
+    .hx-acc-title {
+        font-size: 1.4rem;
+    }
+
+    .hx-accordion-item:hover,
+    .hx-accordion-item.active {
+        padding: 20px 16px;
+        /* Ekran çok daraldığında iç boşlukları sıkıştırıyoruz */
+    }
+}

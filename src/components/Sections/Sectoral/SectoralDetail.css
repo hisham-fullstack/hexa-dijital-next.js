@@ -1,0 +1,415 @@
+/* ==========================================================================
+   SEKTÖREL DETAY - Z-PATTERN (ZIG-ZAG) MİMARİSİ
+   ========================================================================== */
+
+/* --- HERO BÖLÜMÜ (Orijinal Eski Hali) --- */
+.hexa-sd-hero-block {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 120px;
+}
+
+.hexa-sd-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hexa-sd-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+.hexa-sd-top-action {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    z-index: 20;
+}
+
+.hexa-sd-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hexa-sd-back-btn:hover {
+    background-color: var(--hexa-accent);
+    color: #000000;
+    border-color: var(--hexa-accent);
+}
+
+.hexa-sd-hero-title {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.hexa-sd-hero-title .title-line {
+    font-size: clamp(2.5rem, 9vw, 10rem);
+    font-weight: 500;
+    line-height: 0.85;
+    letter-spacing: -3px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* --- ANA KONTEYNER VE ORTAK RENKLER --- */
+
+.text-cyan {
+    color: var(--hexa-accent);
+}
+
+.text-danger {
+    color: #ff4b4b;
+}
+
+.icon-danger {
+    color: #ff4b4b;
+}
+
+.icon-success {
+    color: var(--hexa-accent);
+}
+
+/* --- SPLIT (İKİYE BÖLÜNMÜŞ) Z-PATTERN YERLEŞİMİ --- */
+.hexa-split-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 8vw;
+    margin-bottom: 150px;
+}
+
+/* Reverse özelliği: Sol ve Sağın yerini değiştirir */
+.hexa-split-section.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+/* Makale Paneli (Sticky) */
+.split-text-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Scroll ettikçe ekranda asılı kalması için */
+.sticky-panel {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15vh;
+}
+
+.section-kicker {
+    font-family: monospace;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.section-kicker.danger {
+    color: #ff4b4b;
+}
+
+.section-kicker.success {
+    color: var(--hexa-accent);
+}
+
+.split-title {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 40px;
+    color: var(--hexa-font-main);
+}
+
+.article-content .lead-text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--hexa-font-main);
+    margin-bottom: 40px;
+}
+
+.article-sub-block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--hexa-font-main);
+}
+
+.article-sub-block p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--hexa-font-dim);
+}
+
+/* Kartlar Paneli (Kaydırılabilir) */
+.split-cards-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* --- GLASSMORPHISM KART YAPISI --- */
+.hexa-glass-card {
+    background: var(--hexa-card-bg);
+    border: 1px solid var(--hexa-card-border);
+    border-radius: var(--radius-card);
+    padding: 40px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all var(--transition-fast);
+}
+
+.hexa-glass-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Problem Kartı Özel Efektleri */
+.problem-card:hover {
+    border-color: rgba(255, 75, 75, 0.4);
+    background: rgba(255, 75, 75, 0.03);
+}
+
+/* Çözüm Kartı Özel Efektleri */
+.solution-card:hover {
+    border-color: var(--hexa-accent);
+    background: rgba(0, 255, 209, 0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 15px;
+}
+
+.card-num {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--hexa-font-dim);
+    opacity: 0.5;
+}
+
+.phase-badge {
+    font-family: monospace;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: var(--hexa-font-main);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.hexa-glass-card h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: var(--hexa-font-main);
+}
+
+.hexa-glass-card p {
+    font-size: 1.1rem;
+    color: var(--hexa-font-dim);
+    line-height: 1.6;
+}
+
+/* --- FINAL CTA BÖLÜMÜ --- */
+.hexa-final-cta {
+    padding: 0 0 150px 0;
+}
+
+.cta-inner-glass {
+    background: linear-gradient(135deg, rgba(0, 255, 209, 0.05) 0%, transparent 100%);
+    border: 1px solid var(--hexa-card-border);
+    border-radius: 30px;
+    padding: 100px 5%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.cta-inner-glass h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+}
+
+.cta-inner-glass p {
+    font-size: 1.3rem;
+    color: var(--hexa-font-dim);
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hexa-magnetic-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--hexa-accent);
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+
+.hexa-magnetic-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 255, 209, 0.3);
+}
+
+/* ==========================================================================
+   YENİ: SEKTÖREL BAŞARI HİKAYELERİ (RELATED PROJECTS)
+   ========================================================================== */
+.hexa-related-projects-section {
+    margin-bottom: 150px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 100px;
+}
+
+.related-header {
+    margin-bottom: 60px;
+}
+
+.related-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    color: var(--hexa-font-main);
+    margin-top: 10px;
+}
+
+.related-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.related-project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 24px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
+}
+
+.related-project-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 255, 209, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 255, 209, 0.05);
+}
+
+.rp-image-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rp-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.related-project-card:hover .rp-image-box img {
+    transform: scale(1.05);
+}
+
+.rp-info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 10px;
+}
+
+.rp-client {
+    font-size: 0.85rem;
+    color: var(--hexa-accent);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.rp-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--hexa-font-main);
+    margin: 0;
+}
+
+.rp-action-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid var(--hexa-card-border);
+    color: var(--hexa-font-dim);
+    transition: all 0.3s ease;
+}
+
+.related-project-card:hover .rp-action-circle {
+    background: var(--hexa-accent);
+    color: var(--hexa-bg);
+    border-color: var(--hexa-accent);
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .related-projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- MOBİL UYARLAMA --- */
+@media (max-width: 1024px) {
+
+    .hexa-split-section,
+    .hexa-split-section.reverse-layout {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sticky-panel {
+        position: relative;
+        top: 0;
+    }
+}
