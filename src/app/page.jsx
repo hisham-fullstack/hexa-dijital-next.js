@@ -8,7 +8,6 @@ export const metadata = {
   description:
     "Bursa'nın fütüristik tasarım, yazılım ve reklam ajansı Hexa Dijital. Web tasarım, mobil uygulama, SEO ve premium dijital marka çözümleriyle zirveye oynayın.",
 
-  // 3. Google Botlarına Sayfanın Odak Noktasını Gösteren Kelime Dizini
   keywords: [
     "bursa web tasarım",
     "bursa yazılım şirketi",
