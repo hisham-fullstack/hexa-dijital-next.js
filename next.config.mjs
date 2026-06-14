@@ -6,5 +6,4 @@ const nextConfig = {
   },
 };
 
-// module.exports YERİNE BURAYI export default OLARAK DEĞİŞTİRDİK
 export default nextConfig;
