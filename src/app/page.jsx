@@ -1,4 +1,4 @@
-import Home from "../components/Sections/Home/Home";
+import Home from "../components/sections/Home/Home";
 
 export const metadata = {
   // 1. Arama Sonuçlarında Doğrudan Bursa Piyasasını Bloke Eden Öldürücü Başlık
