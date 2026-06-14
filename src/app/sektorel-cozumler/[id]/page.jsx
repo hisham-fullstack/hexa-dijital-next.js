@@ -1,6 +1,12 @@
 import SectoralDetail from "@/components/sections/Sectoral/SectoralDetail";
 import { sectoralData } from "@/data/sectoralData";
 
+export function generateStaticParams() {
+  return sectoralData.map((sector) => ({
+    id: sector.id,
+  }));
+}
+
 // 1. DİNAMİK NİŞ SEO MOTORU (Metadata, OpenGraph ve Twitter Card)
 export async function generateMetadata({ params }) {
   const { id } = params;

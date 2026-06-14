@@ -1,6 +1,12 @@
 import ProjectDetail from "@/components/sections/Projects/ProjectDetail";
 import { projectsData } from "@/data/projectsData";
 
+export function generateStaticParams() {
+  return projectsData.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 // 1. DİNAMİK SEO MOTORU (Metadata, OpenGraph ve Twitter Card)
 export async function generateMetadata({ params }) {
   const { slug } = params;

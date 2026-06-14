@@ -1,6 +1,35 @@
 import ServiceDetail from "@/components/sections/Services/ServiceDetail";
 import { servicesData } from "@/data/servicesData";
 
+const slugify = (text) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[ğĞ]/g, "g")
+    .replace(/[üÜ]/g, "u")
+    .replace(/[şŞ]/g, "s")
+    .replace(/[ıİ]/g, "i")
+    .replace(/[öÖ]/g, "o")
+    .replace(/[çÇ]/g, "c")
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/--+/g, "-");
+};
+
+export function generateStaticParams() {
+  const params = [];
+  servicesData.forEach((cat) => {
+    cat.subCategories.forEach((sub) => {
+      const subCategorySlug = slugify(sub.title);
+      sub.items.forEach((item) => {
+        params.push({ subCategorySlug, slug: item.slug });
+      });
+    });
+  });
+  return params;
+}
+
 // 1. DİNAMİK SEO MOTORU (Metadata, OpenGraph ve Twitter Card)
 export async function generateMetadata({ params }) {
   const { subCategorySlug, slug } = params;

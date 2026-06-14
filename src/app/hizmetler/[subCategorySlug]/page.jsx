@@ -1,6 +1,16 @@
 import SubCategoryDetail from "@/components/sections/Services/SubCategoryDetail";
 import { servicesData } from "@/data/servicesData";
 
+export function generateStaticParams() {
+  const params = [];
+  servicesData.forEach((cat) => {
+    cat.subCategories.forEach((sub) => {
+      params.push({ subCategorySlug: slugify(sub.title) });
+    });
+  });
+  return params;
+}
+
 // URL'leri güvenli hale getiren yerel slugify fonksiyonu
 const slugify = (text) => {
   return text

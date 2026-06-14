@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import { servicesData } from "@/data/servicesData";
 import { projectsData } from "@/data/projectsData";
 import { sectoralData } from "@/data/sectoralData";
