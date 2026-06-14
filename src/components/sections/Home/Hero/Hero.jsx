@@ -1,7 +1,10 @@
 import React from "react";
-import LightRays from "./LightRays";
-import Logo3D from "./Logo3D";
+import dynamic from "next/dynamic"; // Next.js dinamik import modülü eklendi
 import "./Hero.css";
+
+// Ağır WebGL ve 3D bileşenlerini SSR'dan çıkarıp, sayfa yüklendikten sonra istemci tarafında yüklüyoruz
+const LightRays = dynamic(() => import("./LightRays"), { ssr: false });
+const Logo3D = dynamic(() => import("./Logo3D"), { ssr: false });
 
 const Hero = () => {
   return (
@@ -43,8 +46,6 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-
-      {/* MERKEZ ALT: Minimalist Kaydırma İbresi */}
     </section>
   );
 };
