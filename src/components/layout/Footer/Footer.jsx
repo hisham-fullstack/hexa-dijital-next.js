@@ -158,7 +158,7 @@ const Footer = () => {
               <span>Instagram</span>
             </a>
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/hexadijitall"
               target="_blank"
               rel="noreferrer"
               className="social-link"
