@@ -1,7 +1,6 @@
 /* --- FOOTER ANA KAPSAYICI --- */
 .hexa-premium-footer {
     background-color: var(--hexa-bg);
-    /* Tamamen zifiri karanlık, siber hissiyat */
     color: var(--hexa-font-main);
     padding-top: 5vw;
     position: relative;
@@ -18,10 +17,8 @@
     display: flex;
     flex-direction: column;
     gap: 5vw;
-    /* Satırlar arası devasa boşluk (Awwwards stili) */
 }
 
-/* Satır Düzeni: Sol taraf başlık, Sağ taraf 4'lü kolonlar */
 .footer-row {
     display: grid;
     grid-template-columns: 2fr 8fr;
@@ -29,7 +26,6 @@
     align-items: flex-start;
 }
 
-/* Sol Başlık (Örn: VISUAL AND MARKETING) */
 .footer-row-title h3 {
     font-size: 0.95rem;
     font-weight: 400;
@@ -38,14 +34,12 @@
     transition: background-color var(--transition-theme), border-color var(--transition-theme), color var(--transition-theme);
 }
 
-/* Sağ Kolonlar (4 eşit parça) */
 .footer-row-links {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
 
-/* Kolon Başlıkları (Örn: Brand Strategy ↗) */
 .footer-col h4 {
     font-size: 1.05rem;
     font-weight: 400;
@@ -72,49 +66,42 @@
     transform: translate(3px, -3px);
 }
 
-/* Link Listeleri */
 .footer-col ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    /* Linkler arası rahat boşluk */
 }
 
 .footer-col a {
     text-decoration: none;
     color: var(--hexa-font-dim);
-    /* Referanstaki gibi sönük gri */
     font-size: 0.95rem;
     transition: color var(--transition-fast);
 }
 
 .footer-col a:hover {
     color: var(--hexa-font-main);
-    /* Üzerine gelince beyaza parlar */
 }
 
 /* ==========================================
    ALT KISIM: DEVASA YAZI & SOSYAL LİNKLER
 ========================================== */
-/* --- ALT KISIM: DEVASA YAZI & SOSYAL LİNKLER --- */
 .footer-bottom-container {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 40px;
-    /* Sosyal medya satırı için yer bırak */
+    /* Yapışkan panel için alt boşluk artırıldı */
+    padding-bottom: 120px;
 }
 
-/* Arkaplandaki "HEXA" Yazısı */
 .footer-massive-text {
     width: 100%;
     position: relative;
     z-index: 1;
-    /* Diğer öğelerin arkasında kalmasını sağlar */
     display: flex;
     justify-content: left;
     align-items: flex-end;
@@ -126,37 +113,57 @@
     width: 100%;
     text-align: center;
     font-size: 35vw;
-    /* Ekranı tam doldurması için oranlandı */
     font-weight: 700;
-    /* RENGİ GÖZÜKÜR HALE GETİRDİK: %5 opaklık verdik */
     color: var(--hexa-card-bg);
     text-transform: uppercase;
 }
 
-/* Sosyal Medya Satırı */
+/* ==========================================
+   YENİ: SOSYAL MEDYA & COPYRIGHT SATIRI
+========================================== */
 .footer-social-row {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 0 5%;
+    /* Yapışkan panelin üzerine hizalamak için 100px yapıldı */
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 2;
-    /* Yazının önünde durması için daha yüksek z-index */
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 25px;
 }
 
-.footer-social-row a {
-    color: var(--hexa-font-main);
+.copyright-text {
+    color: var(--hexa-font-dim);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 32px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--hexa-font-dim);
     text-decoration: none;
     font-size: 0.85rem;
     letter-spacing: 1px;
-    font-weight: 500;
-    transition: color var(--transition-fast);
+    text-transform: uppercase;
+    transition: all var(--transition-fast);
 }
 
-.footer-social-row a:hover {
+/* Neon parlama ve yukarı zıplama efekti */
+.social-link:hover {
     color: var(--hexa-accent);
+    transform: translateY(-3px);
+    text-shadow: 0 0 12px rgba(0, 255, 209, 0.25);
 }
 
 /* ==========================================
@@ -165,27 +172,32 @@
 @media (max-width: 1200px) {
     .footer-row {
         grid-template-columns: 1fr;
-        /* Sol başlık üste geçer */
         gap: 30px;
     }
 
     .footer-row-links {
         grid-template-columns: repeat(2, 1fr);
-        /* 4 kolon 2'ye düşer */
     }
 }
 
 @media (max-width: 768px) {
     .footer-row-links {
         grid-template-columns: 1fr;
-        /* Mobilde her şey alt alta */
         gap: 50px;
     }
 
     .footer-social-row {
+        flex-direction: column-reverse;
+        gap: 24px;
+        /* Mobilde panelin üzerinde kalması için ayarlandı */
+        bottom: 90px;
+        padding-top: 20px;
+    }
+
+    .social-links {
+        width: 100%;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: center;
-        bottom: 20px;
     }
 }

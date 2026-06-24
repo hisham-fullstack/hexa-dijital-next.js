@@ -2,7 +2,16 @@
 import React from "react";
 import Link from "next/link";
 import { servicesData } from "../../../data/servicesData";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
+import {
+  FaInstagram,
+  FaLinkedin,
+  FaXTwitter,
+  FaFacebook,
+  FaYoutube,
+  FaPinterest,
+  FaTiktok,
+} from "react-icons/fa6";
 import "./Footer.css";
 
 // URL'ler için Türkçe karakterleri temizleyen fonksiyon
@@ -128,6 +137,73 @@ const Footer = () => {
         {/* Arkaplana gömülen devasa marka ismi */}
         <div className="footer-massive-text">
           <span>HEXA</span>
+        </div>
+      </div>
+
+      {/* ALT BÖLÜM: DEVASA YAZI VE SOSYAL MEDYA LİNKLERİ */}
+      <div className="footer-bottom-container">
+        {/* YENİ: ŞIK SOSYAL MEDYA VE COPYRIGHT SATIRI */}
+        <div className="footer-social-row">
+          <div className="copyright-text">
+            © {new Date().getFullYear()} Hexa Dijital. Tüm hakları saklıdır.
+          </div>
+          <div className="social-links">
+            <a
+              href="https://instagram.com/hexadijital"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <FaInstagram size={18} />
+              <span>Instagram</span>
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <FaFacebook size={18} />
+              <span>Facebook</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@HEXADijital"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <FaYoutube size={18} />
+              <span>YouTube</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@hexadijital"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <FaTiktok size={18} />
+              <span>TikTok</span>
+            </a>
+            <a
+              href="https://tr.pinterest.com/hexadijital/"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <FaPinterest size={18} />
+              <span>Pinterest</span>
+            </a>
+
+            <a
+              href="https://x.com/hexadijital"
+              target="_blank"
+              rel="noreferrer"
+              className="social-link"
+            >
+              <FaXTwitter size={18} />
+              <span>X</span>
+            </a>
+          </div>{" "}
         </div>
       </div>
     </footer>
