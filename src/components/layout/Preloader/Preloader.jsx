@@ -43,9 +43,9 @@ const Preloader = ({ onComplete }) => {
 
   // Awwwards tarzı pürüzsüz çıkış animasyonu (Eğri: çok hızlı başlar, çok yavaş biter)
   const slideUp = {
-    initial: { top: 0 },
+    initial: { y: "0%" },
     exit: {
-      top: "-100vh",
+      y: "-100%", // top yerine y kullanıyoruz
       transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] },
     },
   };
