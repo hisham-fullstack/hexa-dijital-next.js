@@ -6,47 +6,51 @@ export const servicesData = [
     title: "Kurumsal Kimlik & Reklam",
     index: "01",
     description:
-      "Markanızın hem dijitalde hem de fiziksel dünyada profesyonel görünmesini sağlar, bilinirliğinizi ve müşteri kitlenizi artırırız.",
+      "Markanızın hem dijitalde hem de fiziksel dünyada profesyonel görünmesini sağlar, marka bilinirliğinizi ve müşteri kitlenizi artırırız.",
     bgImage: `/assets/servicess/brand_identity.webp`,
     subCategories: [
       {
         title: "Marka & Tasarım",
         image: `/assets/servicess/brand_identity.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
-        sloganMain: "Markanızın sektördeki",
-        sloganHighlight: "yükselişini başlatın.",
-        metaTags: ["Premium Hizmet", "SEO Uyumlu Tasarım", "Ödüllü Ajans"],
+        sloganMain: "Sektörünüzdeki",
+        sloganHighlight: "yükselişinizi başlatın.",
         introText:
-          "Dijital ve fiziksel dünyada markanızı var eden en önemli unsurların başında Marka ve Tasarım süreçleri gelir. Doğru kurgulanmış bir strateji, işletmenizi rakiplerinden keskin bir şekilde ayırır.",
+          "Markanızı var eden en önemli unsurların başında tasarım süreçleri gelir. Doğru kurgulanmış bir strateji, işletmenizi bölgesel ve ulusal rakiplerinden keskin bir şekilde ayırır.",
         descriptionTitle: "Neden Marka & Tasarım Ekstra Önem Taşır?",
         description:
-          "Günümüz rekabet koşullarında standart çözümler markanızı görünmez kılar. Profesyonel bir marka mimarisi, potansiyel müşterilerinizde ilk saniyeden itibaren güven uyandırır, satış ve dönüşüm oranlarınızı doğrudan artırır.",
+          "Günümüz rekabet koşullarında sıradan çözümler markanızı görünmez kılar. Profesyonel bir tasarım, potansiyel müşterilerinizde ilk saniyeden itibaren güven uyandırır, satışlarınızı doğrudan artırır.",
         blockquote:
-          "İyi bir tasarım ve doğru kimlik maliyet değil, işletmenizin geleceğine yapılan en karlı yatırımdır.",
+          "İyi bir tasarım maliyet değil, işletmenizin geleceğine yapılan en karlı yatırımdır.",
         processTitle: "Uygulama Sürecimiz Nasıl İşliyor?",
         process:
-          "Sürece, markanızın mevcut durumunu ve hedeflerini dinleyerek başlıyoruz. Şablonlardan uzak, tamamen markanızın vizyonuna ve sektörünüzün dinamiklerine uygun terzi işi çözümler üretiyoruz.",
+          "Sürece, markanızın mevcut durumunu ve hedeflerini dinleyerek başlıyoruz. Hazır şablonlardan uzak, tamamen markanızın vizyonuna ve sektörünüze uygun, size özel çözümler üretiyoruz.",
         processSteps: [
           {
             title: "Derinlemesine Analiz",
             text: "Sektör, rakip ve hedef kitle dinamiklerinin araştırılması.",
           },
           {
-            title: "Stratejik Planlama",
-            text: "İhtiyacınıza yönelik özel mimarinin ve konseptin çizilmesi.",
+            title: "Planlama",
+            text: "İhtiyacınıza yönelik özel tasarım konseptinin çizilmesi.",
           },
           {
             title: "Kusursuz Uygulama",
             text: "Yüksek kalite standartlarıyla tasarımın hayata geçirilmesi.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
             name: "Logo Tasarımı",
-            slug: "logo-tasarimi",
+            slug: "bursa-profesyonel-logo-tasarimi",
+            seoTitle: "Bursa Profesyonel Logo Tasarım Ajansı | Hexa Dijital",
+            seoKeywords: [
+              "Bursa logo tasarımı",
+              "Nilüfer marka kimliği",
+              "Bursa kurumsal kimlik ajansı",
+              "logo yapan firmalar bursa",
+              "Osmangazi grafik tasarım",
+              "hexa dijital logo",
+            ],
             price: "5.000",
             image: `/assets/servicess/logo.webp`,
             heroTitle1: "Logo",
@@ -54,15 +58,24 @@ export const servicesData = [
             sloganMain: "Markanızın sektördeki",
             sloganHighlight: "ilk izlenimini kusursuzlaştırın.",
             introText:
-              "İyi bir logo sadece güzel görünmez; güven verir, akılda kalır ve şirketin vizyonunu tek bakışta anlatır.",
+              "İyi bir logo sadece güzel görünmez; güven verir, akılda kalır ve şirketinizin vizyonunu tek bakışta anlatır.",
             description:
-              "Logo, dijital dünyadaki ve fiziksel pazardaki imzanızdır. Yanlış renk ve tipografi seçimi markanızı ucuz gösterebilirken; profesyonel bir logo müşterilerinize doğrudan güven aşılar.",
+              "Logo, dijital dünyadaki ve tabelanızdaki imzanızdır. Profesyonel bir logo müşterilerinize doğrudan güven aşılar.",
             process:
-              "Markanızın vizyonunu ve hedef kitlesini dinliyoruz. Sektörel rakiplerinizi analiz ettikten sonra, minimalist ve modern tasarım prensipleriyle eskizler oluşturuyor, onayınıza sunarak kusursuz sonuca ulaşıyoruz.",
+              "Markanızın vizyonunu ve hedef kitlesini dinliyoruz. Sade ve modern tasarım kurallarıyla eskizler oluşturup kusursuz sonuca ulaşıyoruz.",
           },
           {
             name: "Kurumsal Kimlik (Kartvizit, vb.)",
-            slug: "kurumsal-kimlik",
+            slug: "bursa-kurumsal-kimlik-tasarimi",
+            seoTitle:
+              "Bursa Kurumsal Kimlik Tasarımı ve Markalama | Hexa Dijital",
+            seoKeywords: [
+              "Bursa kurumsal kimlik",
+              "Bursa marka danışmanlığı",
+              "Nilüfer kurumsal tasarım",
+              "kartvizit tasarımı bursa",
+              "kurumsal kimlik fiyatları bursa",
+            ],
             price: "5.000",
             image: `/assets/servicess/kartvizit.webp`,
             heroTitle1: "Kurumsal",
@@ -70,217 +83,276 @@ export const servicesData = [
             sloganMain: "İşletmenizin her noktasında",
             sloganHighlight: "sarsılmaz bir bütünlük yaratın.",
             introText:
-              "Müşterinizin eline geçen bir kartvizitten, kestiğiniz e-faturaya kadar her detay markanızın kalitesini yansıtmalıdır.",
+              "Müşterinizin eline geçen bir kartvizitten, kestiğiniz faturaya kadar her detay markanızın kalitesini yansıtmalıdır.",
             description:
-              "Kurumsal kimlik, işletmenizin anayasasıdır. Tutarlı ve uyumlu bir kurumsal kimlik, markanızı merdiven altı firmalardan ayırarak doğrudan premium segmente taşır.",
+              "Kurumsal kimlik, işletmenizin anayasasıdır. Uyumlu bir kurumsal görünüm, markanızı merdiven altı firmalardan ayırarak üst seviyeye taşır.",
             process:
-              "Logonuzun dinamiklerine uygun bir renk ve font hiyerarşisi belirliyoruz. Ardından kartvizit, antetli kağıt, zarf ve dijital şablonlarınızı marka dili altında birleştirip matbaaya hazır formatta teslim ediyoruz.",
+              "Logonuza uygun renk ve yazı tiplerini belirliyoruz. Tüm belgelerinizi ve tasarımlarınızı marka dili altında birleştirip matbaaya hazır teslim ediyoruz.",
           },
           {
             name: "Mekan & Otel Çekimi",
-            slug: "mekan-ve-otel-cekimi",
+            slug: "bursa-mekan-ve-otel-cekimi",
+            seoTitle:
+              "Bursa Mekan, Otel ve Mimari Fotoğraf Çekimi | Hexa Dijital",
+            seoKeywords: [
+              "Bursa mekan çekimi",
+              "Bursa otel fotoğrafçısı",
+              "Bursa mimari çekim",
+              "Demirtaş mekan çekimi",
+              "Nilüfer restoran fotoğrafçısı",
+            ],
             price: "10.000",
             note: "Günlük",
             image: `/assets/servicess/hotel.webp`,
             heroTitle1: "Mekan",
             heroTitle2: "Çekimi",
-            sloganMain: "Potansiyel misafirlerinize",
-            sloganHighlight: "kusursuz bir konaklama deneyimi yaşatın.",
+            sloganMain: "Potansiyel müşterilerinize",
+            sloganHighlight: "kusursuz bir deneyim yaşatın.",
             introText:
-              "Booking, TripAdvisor veya web sitenizde gezinen bir misafir, otelinize adım atmadan önce odalarınızın konforunu hissetmek ister.",
+              "Müşterileriniz, işletmenize adım atmadan önce mekanınızın konforunu ve atmosferini internette hissetmek ister.",
             description:
-              "Mekan ve otel çekimleri; standart, deluxe ve kral dairelerinizin tüm detaylarını dijital dünyaya aktarır. Doğru ışık yönetimi otelinizin doluluk oranlarını doğrudan etkiler.",
+              "Profesyonel mekan çekimleri; işletmenizin tüm detaylarını en iyi ışıkla internete aktararak müşteri geliş oranlarınızı doğrudan etkiler.",
             process:
-              "Çekim öncesi gün ışığı açılarını ve mekanların hazırlık düzenini planlıyoruz. Profesyonel geniş açı lensler ile çekimleri gerçekleştirip teslim ediyoruz.",
+              "Çekim öncesi gün ışığı açılarını planlıyor, mekanı geniş gösteren profesyonel ekipmanlarla çekimleri gerçekleştiriyoruz.",
           },
           {
             name: "Ürün Çekimi",
-            slug: "urun-cekimi",
+            slug: "bursa-profesyonel-urun-cekimi",
+            seoTitle:
+              "Bursa Profesyonel Ürün Çekimi ve E-Ticaret Fotoğrafçılığı | Hexa",
+            seoKeywords: [
+              "Bursa ürün çekimi",
+              "Bursa e-ticaret fotoğrafçısı",
+              "ürün fotoğrafçılığı bursa",
+              "Nilüfer ürün çekim stüdyosu",
+              "katalog çekimi bursa",
+            ],
             price: "200",
             note: "Adet",
             image: `/assets/servicess/product_photo.webp`,
             heroTitle1: "Ürün",
             heroTitle2: "Çekimi",
-            sloganMain: "E-ticarette ve kataloglarınızda",
-            sloganHighlight: "satışları artıran kusursuz görseller.",
+            sloganMain: "İnternet satışlarınızda",
+            sloganHighlight: "siparişleri artıran kusursuz görseller.",
             introText:
-              "Dijital dünyada müşterinizin ürününüze dokunma şansı yoktur; bu yüzden güveni sadece fotoğrafın kalitesiyle sağlayabilirsiniz.",
+              "İnternet dünyasında müşterinizin ürününüze dokunma şansı yoktur; bu yüzden güveni sadece fotoğrafın kalitesiyle sağlayabilirsiniz.",
             description:
-              "Profesyonel ürün çekimi, ürünlerinizin tüm detaylarını en doğru ışık altında ortaya çıkarır. Kusursuz görseller, doğrudan dönüşüm oranlarınızı artırarak markanızı rakiplerinizin önüne taşır.",
+              "Profesyonel ürün çekimi, ürünlerinizin kalitesini ortaya çıkarır. Kusursuz görseller internetteki sipariş oranlarınızı anında artırır.",
             process:
-              "Beyaz fon veya kreatif arka planlar eşliğinde çekimleri tamamlayıp, yüksek çözünürlüklü rötuş (retouch) işlemlerinin ardından dijital platformlara hazır teslim ediyoruz.",
+              "Özel konseptler veya beyaz arka plan eşliğinde çekimleri tamamlayıp, pürüzsüzleştirme işlemleriyle fotoğrafları teslim ediyoruz.",
           },
         ],
       },
       {
         title: "Sosyal Medya Yönetimi",
         image: `/assets/servicess/subServicess/social_medya.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
-        sloganMain: "Markanızın dijital sesini",
+        sloganMain: "Markanızın sesini",
         sloganHighlight: "milyonlara duyurun.",
-        metaTags: ["Organik Büyüme", "Etkileşim Odaklı", "Kriz Yönetimi"],
         introText:
-          "Sosyal medya sadece fotoğraf paylaşılan bir yer değil; markanızın yaşayan, nefes alan ve müşterilerle birebir iletişim kuran en büyük dijital şubesidir.",
+          "Sosyal medya sadece fotoğraf paylaşılan bir yer değil; markanızın yaşayan, müşterilerle birebir iletişim kuran en büyük şubesidir.",
         descriptionTitle: "Sosyal Medya Yönetimi Neden Vazgeçilmezdir?",
         description:
-          "Sürekli ve kaliteli içerik üretimi, markanızı unutturmaz. Hedef kitleyle kurulan doğru etkileşim, markanızı sektörünüzde bir otorite haline getirir ve güven algısını artırarak doğrudan satışlara yansır.",
+          "Sürekli ve kaliteli görsel üretimi, markanızı unutturmaz. Müşterilerle kurulan doğru iletişim, sizi kendi sektörünüzde güvenilir bir konuma getirir.",
         blockquote:
-          "Sosyal medyada var olmak bir seçenek değil, günümüz ticaretinde hayatta kalmanın temel kuralıdır.",
+          "Sosyal medyada profesyonelce var olmak bir seçenek değil, günümüz ticaretinin temel kuralıdır.",
         processTitle: "Stratejik Yönetim Sürecimiz",
         process:
-          "Markanızın karakterine (Tone of Voice) uygun bir dil belirliyor, içerikleri tesadüflere değil veri ve analitiklere dayandırarak aylık planlıyoruz.",
+          "Markanızın duruşuna uygun bir dil belirliyor, paylaşımları tesadüflere değil pazar araştırmalarına dayandırarak planlıyoruz.",
         processSteps: [
           {
             title: "İçerik Planlama",
             text: "Rakiplerin analizi ve aylık paylaşım takviminin oluşturulması.",
           },
           {
-            title: "Görsel ve Video Üretimi",
-            text: "Trendlere uygun Reel, post ve hikaye konseptlerinin tasarlanması.",
+            title: "Görsel & Video",
+            text: "İlgi çekici videoların (Reels) ve görsellerin tasarlanması.",
           },
           {
-            title: "Topluluk Yönetimi",
-            text: "Müşterilerden gelen yorum, mesaj ve şikayetlerin hızlıca yönetilmesi.",
+            title: "Müşteri İletişimi",
+            text: "Müşteri yorum ve mesajlarının hızlıca yanıtlanması.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
             name: "Düzenli Paylaşım",
-            slug: "duzenli-paylasim",
+            slug: "bursa-sosyal-medya-yonetimi",
+            seoTitle:
+              "Bursa Sosyal Medya Yönetimi ve İçerik Ajansı | Hexa Dijital",
+            seoKeywords: [
+              "Bursa sosyal medya ajansı",
+              "sosyal medya yönetimi bursa",
+              "Nilüfer sosyal medya uzmanı",
+              "instagram yönetimi bursa",
+              "bursa dijital pazarlama ajansı",
+            ],
             price: "9.000",
             note: "Aylık",
             image: `/assets/servicess/content_scheduling.webp`,
             heroTitle1: "Sosyal",
             heroTitle2: "Medya",
-            sloganMain: "Algoritmaları lehinize çevirip",
-            sloganHighlight: "sadık bir kitle inşa edin.",
+            sloganMain: "Düzenli paylaşımlarla",
+            sloganHighlight: "sadık bir müşteri kitlesi inşa edin.",
             introText:
-              "Sürekli ve kaliteli içerik üretimi, markanızı unutturmaz. Müşterilerinizin güvenini organik olarak kazanmanızı sağlar.",
+              "Sürekli ve kaliteli içerik üretimi, markanızı unutturmaz ve yeni müşterilerinizin güvenini kazanmanızı sağlar.",
             description:
-              "Sosyal medya platformları tutarlılığı ödüllendirir. Düzenli içerik akışı, markanızın büyümesini ve potansiyel müşterilerin sizinle bağ kurmasını doğrudan destekler.",
+              "Sosyal medya algoritmaları sürekliliği sever. Düzenli ve kaliteli içerik akışı markanızın büyümesini doğrudan destekler.",
             process:
-              "Aylık içerik takviminizi önceden planlıyoruz. Marka kimliğinize uygun reel videolar, statik postlar üretiyor, en yüksek etkileşim saatlerinde yayına alıyoruz.",
+              "Aylık paylaşım takviminizi önceden planlıyor, etkileşimin en yüksek olduğu saatlerde yayına alıyoruz.",
           },
           {
             name: "Mesaj ve Yorum Yönetimi",
-            slug: "mesaj-ve-yorum-yonetimi",
+            slug: "bursa-dijital-itibar-yonetimi",
+            seoTitle:
+              "Bursa Dijital İtibar ve Topluluk Yönetimi | Hexa Dijital",
+            seoKeywords: [
+              "Bursa dijital itibar yönetimi",
+              "Bursa kriz yönetimi ajansı",
+              "sosyal medya müşteri hizmetleri bursa",
+              "sosyal medya topluluk yönetimi",
+            ],
             price: "2.500",
             note: "Aylık",
             image: `/assets/servicess/community_management.webp`,
-            heroTitle1: "Topluluk",
-            heroTitle2: "Yönetimi",
+            heroTitle1: "Müşteri",
+            heroTitle2: "İletişimi",
             sloganMain: "Müşterilerinizle aranızdaki",
-            sloganHighlight: "iletişim köprüsünü güçlendirin.",
+            sloganHighlight: "güven köprüsünü güçlendirin.",
             introText:
-              "Hızlı yanıtlar ve doğru kriz yönetimi, şikayetleri doğrudan satışa, takipçileri ise sadık marka elçilerine dönüştürür.",
+              "Hızlı yanıtlar ve doğru iletişim, şikayetleri satışa, sıradan takipçileri ise sadık müşterilere dönüştürür.",
             description:
-              "Müşterileriniz sosyal medyada muhatap bulmak ve hızlı yanıt bekler. Profesyonel bir topluluk yönetimi, marka değerinizi korur ve satış oranlarınızı anında artırır.",
+              "Müşterileriniz internette anında muhatap bulmak ister. Profesyonel bir iletişim yönetimi, satış oranlarınızı anında artırır.",
             process:
-              "Belirlediğimiz kurumsal iletişim dili ile gelen tüm mesaj ve yorumları günlük olarak yanıtlıyoruz. Önemli müşteri taleplerini raporluyoruz.",
+              "Kurumsal kimliğinize uygun bir dille tüm mesajları günlük olarak yanıtlıyor, size düzenli raporlar sunuyoruz.",
           },
           {
-            name: "Topluluk Etkileşimi (Yarışma, anket vb.)",
-            slug: "topluluk-etkilesimi",
+            name: "Kampanya ve Çekilişler",
+            slug: "bursa-interaktif-dijital-kampanyalar",
+            seoTitle:
+              "Bursa İnteraktif Dijital Kampanya ve Çekiliş Yönetimi | Hexa",
+            seoKeywords: [
+              "Bursa çekiliş yönetimi",
+              "sosyal medya yarışma kurguları bursa",
+              "Bursa interaktif pazarlama",
+              "sosyal medya kampanya yönetimi",
+            ],
             price: "2.000",
             image: `/assets/servicess/product_showcase.webp`,
-            heroTitle1: "İnteraktif",
-            heroTitle2: "Kurgular",
+            heroTitle1: "Kampanya",
+            heroTitle2: "Yönetimi",
             sloganMain: "Sadece izleyen değil,",
             sloganHighlight: "harekete geçen bir kitle yaratın.",
             introText:
-              "Kullanıcıları içeriğinize dahil eden oyunlaştırmalar, markanızın etkileşim oranlarını ve viral potansiyelini katlar.",
+              "Takipçilerinizi sayfanıza dahil eden etkinlikler, markanızın kulaktan kulağa yayılma hızını katlar.",
             description:
-              "Sadece tek yönlü içerik üretmek yetmez, kitleyi tetiklemek gerekir. İnteraktif kurgular markanızın binlerce yeni hesaba ulaşmasını sağlar.",
+              "Doğru planlanmış yarışma ve anketler, markanızın binlerce yeni kişiye doğal yollarla ulaşmasını sağlar.",
             process:
-              "Hedeflerinize uygun çekiliş, anket veya kullanıcı türevli kampanyalar kurguluyoruz. Süreci baştan sona yönetip sonuçları analiz ediyoruz.",
+              "Hedeflerinize uygun kampanya ve çekilişler kurguluyor, süreci baştan sona yasal ve şeffaf bir şekilde yönetiyoruz.",
           },
         ],
       },
       {
-        title: "Google & Arama Motoru (SEO)",
+        title: "Google ve Arama Motoru",
         image: `/assets/servicess/subServicess/local_seo.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
-        sloganMain: "Aramalarda kaybolmayın,",
+        sloganMain: "Google aramalarında kaybolmayın,",
         sloganHighlight: "zirvede yerinizi alın.",
-        metaTags: ["Organik Trafik", "Yerel SEO", "Sürdürülebilir Büyüme"],
         introText:
-          "Müşterileriniz ihtiyaç duydukları anda sizi bulamıyorsa, pazar payınızı doğrudan rakiplerinize hediye ediyorsunuz demektir. Sizi arayanların karşısına ilk siz çıkmalısınız.",
-        descriptionTitle: "SEO ve Harita Çalışmaları Bize Ne Kazandırır?",
+          "Müşterileriniz ihtiyaç duydukları anda sizi bulamıyorsa, pazar payınızı doğrudan rakiplerinize hediye ediyorsunuz demektir.",
+        descriptionTitle: "Google Çalışmaları Bize Ne Kazandırır?",
         description:
-          "Arama motoru optimizasyonu (SEO), web sitenize reklam bütçelerine bağımlı kalmadan kalıcı ve ücretsiz trafik sağlar. Harita (Local) SEO'su ise fiziksel mağazanıza kapıdan giren müşteri sayısını ve telefon aramalarını anında artırır.",
+          "Google aramalarında ve haritalarda üst sırada çıkmak, fiziksel mağazanıza veya ofisinize gelen müşteri sayısını ve telefon aramalarını anında artırır.",
         blockquote:
           "Google'da ikinci sayfada olmak, dijital dünyada hiç var olmamakla aynı anlama gelir.",
-        processTitle: "Optimizasyon Sürecimiz",
+        processTitle: "Arama Motoru Sürecimiz",
         process:
-          "Sitenizin teknik check-up'ını yaparak Google botlarının sevmediği tüm pürüzleri gideriyor, sektörünüzde dönüşüm oranı en yüksek olan anahtar kelimeler üzerine stratejiler kuruyoruz.",
+          "Sektörünüzde müşteriye dönüşme ihtimali en yüksek olan kelimeleri belirliyor ve sitenizi bu kelimelerde üst sıralara taşıyoruz.",
         processSteps: [
           {
-            title: "Teknik SEO Analizi",
-            text: "Site hızı, mobil uyumluluk ve index hatalarının giderilmesi.",
+            title: "Teknik Analiz",
+            text: "Site hızı ve mobil uyumluluk gibi Google'ın dikkat ettiği teknik ayarların yapılması.",
           },
           {
-            title: "Kelime Haritalandırma",
-            text: "Sektörünüzde satın almaya en yakın kitleyi çekecek kelimelerin seçimi.",
+            title: "Kelime Seçimi",
+            text: "Satın almaya en yakın kitleyi sitenize çekecek doğru kelimelerin bulunması.",
           },
           {
-            title: "İçerik ve Otorite",
-            text: "Site içi semantik içerik üretimi ve dış referans (backlink) çalışmaları.",
+            title: "Otorite İnşası",
+            text: "Google Haritalar ve yerel rehberlerde konumunuzun güçlendirilmesi.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
-            name: "Google Konum İşlemleri",
-            slug: "google-konum-islemleri",
+            name: "Google Harita Kaydı",
+            slug: "bursa-google-haritalar-optimizasyonu",
+            seoTitle:
+              "Bursa Google Haritalar (Maps) Kaydı ve Optimizasyonu | Hexa",
+            seoKeywords: [
+              "Bursa google benim işletmem",
+              "Bursa google haritalar kaydı",
+              "google maps seo bursa",
+              "Bursa konum ekleme",
+              "işletme doğrulama bursa",
+            ],
             price: "3.000",
             image: `/assets/servicess/google.webp`,
             heroTitle1: "Google",
             heroTitle2: "Haritalar",
-            sloganMain: "Fiziksel mağazanızın kapılarını",
+            sloganMain: "Fiziksel işletmenizin kapılarını",
             sloganHighlight: "dijital dünyaya sonuna kadar açın.",
             introText:
-              "Müşterileriniz size ulaşmak istediğinde karşılarına çıkan ilk ekran olan Google vitrininizi, tam dönüşüm odaklı hale getiriyoruz.",
+              "Müşterilerinizin karşısına çıkan ilk ekran olan Google vitrininizi, güven verecek ve sizi tercih etmelerini sağlayacak hale getiriyoruz.",
             description:
-              "Fiziksel bir işletmeniz varsa, Google Haritalar'da görünür olmak en büyük organik müşteri kaynağınızdır. Doğru bir profil, kapıdan giren müşteri sayısını doğrudan etkiler.",
+              "Bölgesel aramalarda Google Haritalar'da görünür olmak en büyük müşteri kaynağınızdır. İşletme profiliniz dijital dünyadaki tabelanızdır.",
             process:
-              "Google Benim İşletmem hesabınızı doğruluyor, çalışma saatleri, ürün/mekan fotoğrafları ve SEO uyumlu hizmet açıklamalarınızla profilinizi eksiksiz yapılandırıyoruz.",
+              "İşletmenizi Google'da doğruluyor; çalışma saatleri, ürünler ve hizmet açıklamalarınızla profilinizi eksiksiz dolduruyoruz.",
           },
           {
-            name: "Haritada Üst Sıra Çalışması",
-            slug: "harita-ust-sira-calismasi",
+            name: "Google'da Üst Sıralara Çıkma",
+            slug: "bursa-yerel-seo-harita-siralamasi",
+            seoTitle:
+              "Bursa Yerel SEO (Local SEO) ve Harita Üst Sıra Çalışması | Hexa",
+            seoKeywords: [
+              "Bursa yerel seo ajansı",
+              "bursa local seo",
+              "google haritalarda üst sıraya çıkmak bursa",
+              "Nilüfer yerel seo",
+              "harita seo çalışması bursa",
+            ],
             price: "5.000",
             image: `/assets/servicess/google_maps.webp`,
-            heroTitle1: "Yerel",
-            heroTitle2: "SEO",
+            heroTitle1: "Üst Sıra",
+            heroTitle2: "Çalışması",
             sloganMain: "Yakınınızdaki müşterilerin",
             sloganHighlight: "ilk tercihi her zaman siz olun.",
             introText:
-              "Bölgesel aramalarda rakiplerinizi geride bırakarak, haritalarda en çok tıklanan ilk 3 işletme arasına yerleşmenizi sağlıyoruz.",
+              "Bulunduğunuz bölgedeki aramalarda rakiplerinizi geride bırakarak, haritalarda en çok tıklanan ilk 3 işletme arasına yerleşmenizi sağlıyoruz.",
             description:
-              "İnsanlar acil ihtiyaçlarında genellikle haritalardaki ilk 3 işletmeyi tercih eder. Local SEO çalışması ile doğrudan o an satın almaya hazır kitleye ulaşırsınız.",
+              "İnsanlar acil ihtiyaçlarında Google'da karşılarına çıkan ilk 3 işletmeyi tercih eder. Doğrudan satın almaya hazır kitleye ulaşırsınız.",
             process:
-              "Bölgesel anahtar kelime analizleri yapıyor, profilinize düzenli içerik güncellemeleri giriyor ve Yerel Rehber etkileşimleriyle konumunuzun otoritesini artırıyoruz.",
+              "Sektörünüze özel kelime çalışmaları ve düzenli güncellemelerle konumunuzun Google gözündeki değerini artırıyoruz.",
           },
           {
             name: "Müşteri Yorumları Yönetimi",
-            slug: "musteri-yorumlari-yonetimi",
+            slug: "bursa-google-yorum-ve-itibar-yonetimi",
+            seoTitle:
+              "Bursa Google Müşteri Yorumları ve Marka İtibarı Yönetimi",
+            seoKeywords: [
+              "Bursa google yorum yönetimi",
+              "google değerlendirme artırma bursa",
+              "işletme puanı yükseltme bursa",
+              "Bursa şikayet yönetimi",
+            ],
             price: "2.000",
             image: `/assets/servicess/customer_review.webp`,
-            heroTitle1: "İtibar",
+            heroTitle1: "Yorum",
             heroTitle2: "Yönetimi",
-            sloganMain: "Dijitaldeki en büyük gücünüz olan",
-            sloganHighlight: "sosyal kanıtınızı yönetin.",
+            sloganMain: "İnternetteki en büyük gücünüz olan",
+            sloganHighlight: "müşteri yorumlarını yönetin.",
             introText:
-              "Potansiyel bir müşterinin işletmenizi ziyaret etmeden önce baktığı ilk yer olan yorumları, markanızın en büyük referans kaynağına çeviriyoruz.",
+              "Yeni bir müşterinin işletmenize gelmeden önce baktığı ilk yer olan yorumları, en büyük referans kaynağınıza çeviriyoruz.",
             description:
-              "5 yıldızlı ve yüksek hacimli bir Google profili, binlerce liralık reklamdan daha fazla güven verir. İyi yönetilen yorumlar, satın alma kararını hızlandırır.",
+              "5 yıldızlı ve güzel yorumlarla dolu bir Google profili, binlerce liralık reklamdan çok daha fazla güven verir.",
             process:
-              "Olumsuz yorumları profesyonelce yanıtlayıp kriz yönetimi sağlarken, olumlu yorumlara etkileşimli teşekkür mesajları bırakıyoruz.",
+              "Yorumları kurumsal bir dille yanıtlıyor, olası şikayet durumlarında markanızın imajını koruyan profesyonel bir iletişim kuruyoruz.",
           },
         ],
       },
@@ -291,168 +363,208 @@ export const servicesData = [
     title: "Web Sitesi & Mobil Uygulama",
     index: "02",
     description:
-      "İşletmenize özel, modern, jet hızında ve tüm akıllı telefonlarla uyumlu dijital vitrinler ve mobil çözümler üretiyoruz.",
+      "İşletmenize özel, son derece hızlı açılan ve tüm cep telefonlarıyla uyumlu kusursuz web siteleri üretiyoruz.",
     bgImage: `/assets/servicess/web.webp`,
     subCategories: [
       {
         title: "Web Siteleri",
         image: `/assets/servicess/web.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
-        sloganMain: "İşletmenizin dijital dünyadaki",
+        sloganMain: "İşletmenizin internet dünyasındaki",
         sloganHighlight: "prestijli merkezini inşa edin.",
-        metaTags: ["Yüksek Performans", "Modern UI/UX", "Mobil Öncelikli"],
         introText:
-          "Web siteniz, markanızın 7/24 açık olan en büyük ve en maliyetsiz mağazasıdır. Tasarımından açılış hızına kadar her detayıyla müşterinize güven vermelidir.",
+          "Web siteniz, markanızın 7/24 açık olan şubesidir. Görünümünden sayfa açılış hızına kadar her detayıyla müşteriye güven vermelidir.",
         descriptionTitle: "Neden Profesyonel Bir Web Sitesi Şart?",
         description:
-          "Karmaşık, modası geçmiş ve yavaş web siteleri ziyaretçileri saniyeler içinde rakiplerinize kaçırır. Ziyaretçiyi yormayan, güvenli ve modern bir kullanıcı deneyimi (UI/UX) ziyaretçileri sadık müşterilere dönüştüren en güçlü faktördür.",
+          "Karmaşık ve yavaş açılan web siteleri, ziyaretçileri saniyeler içinde rakip firmalara kaçırır. Ziyaretçiyi yormayan, kolay kullanımlı bir site, giren kişileri müşteriye dönüştürür.",
         blockquote:
-          "Ziyaretçilerin markanıza güvenip güvenmemek için karar verme süresi sadece 3 saniyedir.",
-        processTitle: "Web Geliştirme Sürecimiz Nasıl İşliyor?",
+          "Bir ziyaretçinin markanıza güvenip güvenmemek için karar verme süresi sadece 3 saniyedir.",
+        processTitle: "Web Sitesi Kurulum Sürecimiz",
         process:
-          "İşletmenizin vizyonuna ve ayırdığı bütçeye göre en uygun teknoloji yığınını (Tech Stack) seçiyor, tüm ekranlarda (Responsive) kusursuz çalışan mimariler kodluyoruz.",
+          "İşletmenizin ihtiyaçlarına en uygun altyapıyı seçiyor, Google testlerinden tam puan alan, hata vermeyen sistemler kuruyoruz.",
         processSteps: [
           {
-            title: "UI/UX Tasarımı",
-            text: "Kullanıcı deneyimine odaklı, modern ve sektöre özel arayüz çizimi.",
+            title: "Tasarım Aşaması",
+            text: "Ziyaretçilerin rahatça gezebileceği, modern ve şık ekran tasarımları çiziyoruz.",
           },
           {
-            title: "Kodlama ve Entegrasyon",
-            text: "Global standartlarda, yüksek performanslı temiz kod mimarisinin kurulması.",
+            title: "Yazılım Kurulumu",
+            text: "Sitenin arka planını hızlı, güvenli ve sorunsuz çalışacak şekilde inşa ediyoruz.",
           },
           {
-            title: "Test ve Canlıya Alım",
-            text: "Hız (Lighthouse), güvenlik ve tüm mobil cihazlarda uyumluluk testlerinin yapılması.",
+            title: "Test ve Yayın",
+            text: "Tüm cep telefonlarında kusursuz göründüğünden emin olduktan sonra siteyi açıyoruz.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
-            name: "Özel Tasarım Tek Sayfalık Tanıtım Sitesi",
-            slug: "ozel-tasarim-tek-sayfa-tanitim",
+            name: "Tek Sayfalık Tanıtım Sitesi",
+            slug: "bursa-ozel-tasarim-landing-page",
+            seoTitle: "Bursa Özel Tasarım Landing Page ve Tek Sayfa Web Sitesi",
+            seoKeywords: [
+              "Bursa landing page tasarımı",
+              "tek sayfa web sitesi bursa",
+              "Bursa tanıtım sitesi yapan firmalar",
+              "Nilüfer web tasarım ajansı",
+              "satış odaklı web sitesi bursa",
+            ],
             price: "10.000",
             note: "Hosting ücreti yoktur",
             image: `/assets/servicess/custom_one_page.webp`,
-            heroTitle1: "Landing",
-            heroTitle2: "Page",
+            heroTitle1: "Tanıtım",
+            heroTitle2: "Sayfası",
             sloganMain: "Ziyaretçilerinizi saniyeler içinde",
-            sloganHighlight: "müşteriye dönüştüren sayfalar.",
+            sloganHighlight: "müşteriye dönüştüren siteler.",
             introText:
-              "Sadece dikkat çekmekle kalmayan, kullanıcıyı yormadan doğrudan hedefe (satın alma/form) yönlendiren stratejik vitrinler inşa ediyoruz.",
+              "Kullanıcıyı yormadan doğrudan iletişim formuna veya telefon aramasına yönlendiren etkili tanıtım sayfaları kuruyoruz.",
             description:
-              "Yeni bir lansman veya dijital reklam kampanyalarınız için tasarlanmış tek sayfalık siteler, odak dağıtmadığı için en yüksek dönüşüm oranına sahiptir.",
+              "Tek bir sayfadan oluşan bu siteler, ziyaretçinin dikkati dağılmadığı için reklam kampanyalarından en yüksek verimi almanızı sağlar.",
             process:
-              "Markanızın kurumsal kimliğine uygun özel bir UI/UX arayüzü çiziyoruz. Sayfayı modern teknolojilerle kodlayıp yayına alıyoruz.",
+              "Markanıza özel bir tasarım çiziyor, son teknoloji sistemlerle kodlayıp hızlıca yayına alıyoruz.",
           },
           {
-            name: "Hazır Tema Tek Sayfalık Tanıtım Sitesi",
-            slug: "hazir-tema-tek-sayfa-tanitim",
+            name: "Ekonomik Hazır Web Sitesi",
+            slug: "bursa-ekonomik-hazir-web-sitesi",
+            seoTitle: "Bursa Ekonomik ve Hızlı Tek Sayfa Web Sitesi Kurulumu",
+            seoKeywords: [
+              "Bursa uygun fiyatlı web sitesi",
+              "hazır web sitesi bursa",
+              "Bursa hızlı web tasarım",
+              "ucuz web sitesi yapanlar bursa",
+            ],
             price: "5.000",
             note: "Hosting ücreti yoktur",
             image: `/assets/servicess/ready_to_use_theme_one_page.webp`,
             heroTitle1: "Hızlı",
-            heroTitle2: "Tanıtım",
+            heroTitle2: "Kurulum",
             sloganMain: "Zamana karşı yarışan projelerinizi",
             sloganHighlight: "hızla ve güvenle yayına alın.",
             introText:
-              "Kısa sürede dijital bir varlık oluşturmak isteyen işletmeler için kanıtlanmış temalarla bütçe dostu bir çıkış noktası sunuyoruz.",
+              "Kısa sürede internette yer almak isteyen işletmeler için test edilmiş, hatasız çalışan uygun fiyatlı hazır altyapılar sunuyoruz.",
             description:
-              "Test edilmiş ve stabil çalışan altyapılar, teknik sürprizlere yer bırakmaz. Marka prestijinizden ödün vermeden kısa sürede yerinizi alırsınız.",
+              "Sağlam ve hazır sistemler kullandığımız için teknik sorunlar yaşamazsınız. Prestijinizden ödün vermeden internetteki yerinizi hemen alırsınız.",
             process:
-              "Mobil uyumlu ve global standartlarda bir tema belirliyoruz. Görselleri, kurumsal metinleri entegre ederek hızlıca teslim ediyoruz.",
+              "Mobil uyumlu şık bir tasarım seçiyor; görsellerinizi ve şirket yazılarınızı ekleyerek sitenizi hemen teslim ediyoruz.",
           },
           {
-            name: "Özel Tasarım Kurumsal Sitesi",
-            slug: "ozel-tasarim-kurumsal-site",
+            name: "Özel Tasarım Kurumsal Site",
+            slug: "bursa-kurumsal-web-tasarim-ajansi",
+            seoTitle:
+              "Bursa Kurumsal Web Tasarım Ajansı | Özel Yazılım Şirketi",
+            seoKeywords: [
+              "Bursa kurumsal web tasarım",
+              "Bursa yazılım şirketi",
+              "Bursa web tasarım ajansı",
+              "Nilüfer özel web yazılım",
+              "Osmangazi kurumsal web sitesi",
+              "bursa web developer",
+            ],
             price: "25.000",
             note: "Hosting ücreti yoktur",
             image: `/assets/servicess/custom_corporate_website.webp`,
             heroTitle1: "Kurumsal",
             heroTitle2: "Web",
-            sloganMain: "Markanızın dijital dünyadaki",
-            sloganHighlight: "prestijli genel merkezini inşa edin.",
+            sloganMain: "Markanızın internetteki",
+            sloganHighlight: "genel merkezini inşa edin.",
             introText:
-              "Rakiplerinizden keskin bir şekilde ayrılmanızı sağlayacak, tamamen size özel kodlanmış, dinamik içerikli devasa kurumsal web projeleri hayata geçiriyoruz.",
+              "Rakiplerinizden tamamen ayrılmanızı sağlayacak, ihtiyaçlarınıza göre sıfırdan yazılmış kapsamlı kurumsal web projeleri üretiyoruz.",
             description:
-              "Hazır şablonlara sıkışmayan bir marka vizyonunuz varsa, web siteniz de tamamen terzi işi olmalıdır. Özel yazılımlar şirketinizin büyüklüğünü internete yansıtır.",
+              "Şirketinizin büyüklüğünü internete yansıtmak istiyorsanız, web siteniz de tamamen size özel bir mimariye sahip olmalıdır.",
             process:
-              "Sıfırdan UI/UX trendlerine uygun özgün tasarımlar çiziyoruz. SEO dostu mimari ve modern web araçlarıyla yüksek performanslı bir sistem kuruyoruz.",
+              "Sıfırdan tamamen şirketinize özel tasarımlar çiziyor, arama motorlarının sevdiği en güncel kodlama altyapılarıyla sistemi inşa ediyoruz.",
           },
           {
-            name: "Hazır Tema Kurumsal Sitesi",
-            slug: "hazir-tema-kurumsal-site",
+            name: "Hazır Kurumsal Site",
+            slug: "bursa-hazir-tema-kurumsal-web-sitesi",
+            seoTitle: "Bursa Hazır Tema Kurumsal Web Sitesi Yapan Firmalar",
+            seoKeywords: [
+              "Bursa hazır kurumsal site",
+              "Bursa wordpress web tasarım",
+              "şirket sitesi kurma bursa",
+              "Bursa profesyonel tema kurulumu",
+            ],
             price: "15.000",
             note: "Hosting ücreti yoktur",
             image: `/assets/servicess/ready_to_use_theme_corporate.webp`,
-            heroTitle1: "Tema",
-            heroTitle2: "Kurumsal",
-            sloganMain: "Güçlü bir dijital duruşa",
+            heroTitle1: "Kurumsal",
+            heroTitle2: "Site",
+            sloganMain: "Güçlü bir şirket duruşuna",
             sloganHighlight: "hızlı ve ekonomik şekilde sahip olun.",
             introText:
-              "İşletmesinin hizmetlerini ve vizyonunu profesyonel bir vitrinde sergilemek isteyen kurumlar için en ideal çözüm paketidir.",
+              "Hizmetlerini profesyonel bir şekilde internette sergilemek isteyen işletmeler için en ideal çözüm paketidir.",
             description:
-              "Kurumsal bir duruş sergilemek, ihalelerde veya B2B görüşmelerde firmanıza büyük avantaj sağlar. Güçlü bir tema altyapısı bu duruşu en risksiz yoldan sunar.",
+              "Müşteri görüşmelerinizde ve ihalelerde firmanıza büyük avantaj sağlayacak, güvenilirliği kanıtlanmış bir sistem altyapısı sunar.",
             process:
-              "İhtiyaçlarınıza karşılık verecek güncel temalar arasından seçim yapıyoruz. Sayfalarınızı sizin içeriğinize göre şekillendiriyoruz.",
+              "Sektörünüze en uygun tasarımı belirliyor, sayfalarınızı düzenleyip şirket bilgilerinizle birlikte yayına alıyoruz.",
           },
           {
-            name: "3D Web Sitesi (Etkileşimli)",
-            slug: "3d-etkilesimli-web-sitesi",
+            name: "Üç Boyutlu (3D) Web Sitesi",
+            slug: "bursa-3d-etkilesimli-web-tasarim",
+            seoTitle:
+              "Bursa 3D ve Etkileşimli Web Tasarım | Yeni Nesil Dijital Ajans",
+            seoKeywords: [
+              "Bursa 3D web tasarım",
+              "interaktif web sitesi bursa",
+              "Bursa GSAP animasyon",
+              "WebGL tasarım bursa",
+              "yeni nesil web tasarım ajansı bursa",
+            ],
             price: "35.000",
             image: `/assets/servicess/3d_website.webp`,
-            heroTitle1: "Etkileşimli",
-            heroTitle2: "3D Web",
-            sloganMain: "Standartların ötesine geçip",
-            sloganHighlight: "kullanıcılarınızı sitenizde büyüleyin.",
+            heroTitle1: "Özel",
+            heroTitle2: "Tasarım",
+            sloganMain: "Sıradan siteleri unutun,",
+            sloganHighlight: "müşterilerinizi sitenizde büyüleyin.",
             introText:
-              "Kullanıcının fare hareketlerine tepki veren ve ürünlerinizi 360 derece yaşatan yeni nesil dijital evrenler tasarlıyoruz.",
+              "Ziyaretçinin fare hareketlerine tepki veren, ürünlerinizi her açıdan inceletebileceğiniz yeni nesil görsel şovlar hazırlıyoruz.",
             description:
-              "Ziyaretçileriniz sitenizden ayrılmak istemez. Yaratıcı kaydırma (scroll) animasyonları, markanızı sektörün teknolojik vizyoneri olarak konumlandırır.",
+              "Gelişmiş üç boyutlu çizimler ve akıcı animasyonlar kullanarak, markanızı rakiplerinizin fersah fersah önüne geçirecek bir vizyon yaratıyoruz.",
             process:
-              "Three.js ve GSAP gibi ileri düzey render kütüphanelerini kullanarak akıcı, oyun hissiyatı veren interaktif web deneyimleri kodluyoruz.",
+              "Özel grafik motorları kullanarak oyun oynuyormuş hissi veren, son derece akıcı ve havalı internet siteleri üretiyoruz.",
           },
         ],
       },
       {
         title: "Mobil Çözümler",
         image: `/assets/servicess/subServicess/mobile_development.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
-        sloganMain: "Markanızı tüm sadakatiyle",
-        sloganHighlight: "müşterilerinizin cebine taşıyın.",
-        metaTags: ["iOS & Android", "Native Deneyim", "Ölçeklenebilir"],
+        sloganMain: "Markanızı müşterilerinizin",
+        sloganHighlight: "cebine taşıyın.",
         introText:
-          "Mobil uygulama sahibi olmak, markanızı günde onlarca kez müşterinizin gözünün önüne getirmek, yani dijital sadakatin zirvesine oturmak demektir.",
+          "Kendinize ait bir mobil uygulamanın olması, markanızı her gün müşterinizin gözünün önüne getirmek demektir.",
         descriptionTitle: "Mobil Çözümler Neden Önemli?",
         description:
-          "Anlık bildirimler (Push Notifications), kapalı devre kampanya sistemleri ve yüksek kullanım kolaylığı ile mobil uygulamalar; marka bağlılığı yaratmanın ve tekrarlı satışların en etkili yoludur.",
+          "Telefonlara gönderilen bildirimler ve kolay kullanım sayesinde, mobil uygulamalar müşterilerinizin sizden tekrar tekrar alışveriş yapmasını sağlar.",
         blockquote:
-          "İnternet trafiğinin %80'inden fazlası mobil cihazlardan gelmektedir. Gelecek, mobilde değil, mobilin kendisidir.",
-        processTitle: "Mobil Uygulama Geliştirme Sürecimiz",
+          "İnternet kullanımının büyük çoğunluğu cep telefonlarından yapılıyor. Gelecek telefonların içindedir.",
+        processTitle: "Uygulama Geliştirme Sürecimiz",
         process:
-          "React Native gibi çapraz platform teknolojilerini kullanarak tek bir kod tabanından hem iOS hem Android için native hızında çalışan güvenli sistemler üretiyoruz.",
+          "En güncel teknolojileri kullanarak, hem Apple (iOS) hem de Android telefonlarda donmadan, son derece akıcı çalışan uygulamalar üretiyoruz.",
         processSteps: [
           {
-            title: "Sistem Mimarisi",
-            text: "Mobil uygulamanın arkasındaki sunucu (Backend) ve veritabanı altyapısının kurgulanması.",
+            title: "Altyapı Kurulumu",
+            text: "Uygulamanın hızlı ve sorunsuz çalışmasını sağlayacak arka plan sistemlerinin kurulması.",
           },
           {
-            title: "Arayüz (UI) Çizimi",
-            text: "Farklı akıllı telefon ekran boyutlarına özel, pürüzsüz tasarımlar.",
+            title: "Ekran Tasarımı",
+            text: "Farklı telefon boyutlarına uygun, kolay anlaşılır menüler ve tasarımlar çizilmesi.",
           },
           {
-            title: "Market Süreçleri",
-            text: "App Store ve Google Play yayınlanma kural onaylarının alınıp canlıya çıkılması.",
+            title: "Market Onayları",
+            text: "App Store ve Google Play'de yayınlanmak için gerekli kuralların sağlanması.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
             name: "Özel Mobil Uygulama",
-            slug: "ozel-mobil-uygulama",
+            slug: "bursa-ozel-mobil-uygulama-yazilimi",
+            seoTitle:
+              "Bursa Özel Mobil Uygulama Geliştirme (iOS & Android) | Hexa",
+            seoKeywords: [
+              "Bursa mobil uygulama yapan firmalar",
+              "Bursa ios android yazılım",
+              "Bursa app geliştirme",
+              "react native ajansı bursa",
+              "Nilüfer mobil yazılım şirketi",
+            ],
             price: "",
             image: `/assets/servicess/custom_mobile_application_development.webp`,
             heroTitle1: "Mobil",
@@ -460,43 +572,58 @@ export const servicesData = [
             sloganMain: "Markanızı tüm sadakatiyle",
             sloganHighlight: "müşterilerinizin cebine taşıyın.",
             introText:
-              "İşletmenizin vizyonunu Apple App Store ve Google Play platformlarında premium arayüzlerle temsil ediyoruz.",
+              "İşletmenizin vizyonunu Apple App Store ve Google Play mağazalarında en üst düzey kaliteyle temsil ediyoruz.",
             description:
-              "Bir mobil uygulama, müşterilerinizle aranızdaki en doğrudan bağdır. Anlık bildirimler sayesinde markanız daima el altında kalır.",
+              "Doğrudan telefon ekranına düşen bildirimler sayesinde markanız sürekli hatırlanır. Bu da müşteri bağını ve satışları artırır.",
             process:
-              "React Native teknolojisiyle, tek bir kod tabanından her iki platforma yüksek performanslı ve güvenli uygulama mimarileri inşa ediyoruz.",
+              "Yüksek performanslı, güvenli ve telefonun hafızasını yormayan uygulamalar inşa ediyoruz.",
           },
           {
-            name: "Ölçeklenebilir Web Uygulamaları",
-            slug: "olceklenebilir-web-uygulamalari",
+            name: "Gelişmiş İnternet Uygulamaları",
+            slug: "bursa-olceklenebilir-web-uygulamalari-saas",
+            seoTitle: "Bursa Web Uygulaması ve SaaS Geliştirme | Özel Yazılım",
+            seoKeywords: [
+              "Bursa web tabanlı yazılım",
+              "Bursa saas geliştirme",
+              "Bursa özel yazılım firmaları",
+              "bulut tabanlı yazılım bursa",
+              "Bursa frontend backend yazılım",
+            ],
             price: "",
             image: `/assets/servicess/scalable_web_application.webp`,
-            heroTitle1: "Web",
-            heroTitle2: "Uygulaması",
-            sloganMain: "İndirme gerektirmeyen,",
-            sloganHighlight: "bulut tabanlı devasa sistemler kurun.",
+            heroTitle1: "İnternet",
+            heroTitle2: "Yazılımı",
+            sloganMain: "Kullanıcıların telefonuna hiçbir şey",
+            sloganHighlight: "indirmeden kullandığı dev sistemler.",
             introText:
-              "Kullanıcıların hiçbir şey yüklemeden tarayıcı üzerinden mobil uygulama hızında kullanabildiği gelişmiş yazılım mimarileridir.",
+              "Müşterilerinizin internet tarayıcısı üzerinden, sanki bir uygulama indirmiş gibi hızlıca kullanabildiği gelişmiş yazılımlardır.",
             description:
-              "Büyük veri setleri ve on binlerce anlık kullanıcı barındıran projelerin çökmeden, eşzamanlı (real-time) çalışmasını sağlar.",
+              "Aynı anda binlerce kişinin bağlandığı durumlarda bile çökmeden, eşzamanlı olarak güvenle çalışan yüksek kapasiteli projelerdir.",
             process:
-              "Node.js, Supabase ve modern frontend kütüphaneleri kullanarak, ölçeklenebilir veritabanı yapıları kurguluyoruz.",
+              "En güncel ve güvenlik seviyesi en yüksek yazılım dilleriyle, işletmenizin verilerini koruyan güçlü altyapılar kuruyoruz.",
           },
           {
-            name: "Randevu Uygulamaları",
-            slug: "randevu-uygulamalari",
+            name: "Randevu ve Rezervasyon",
+            slug: "bursa-online-randevu-ve-rezervasyon-sistemi",
+            seoTitle: "Bursa Online Randevu, Rezervasyon ve Takvim Yazılımı",
+            seoKeywords: [
+              "Bursa randevu sistemi yazılımı",
+              "klinik randevu programı bursa",
+              "Bursa güzellik merkezi yazılımı",
+              "Bursa online rezervasyon sistemi",
+            ],
             price: "20.000",
             image: `/assets/servicess/appointment_management.webp`,
             heroTitle1: "Akıllı",
             heroTitle2: "Rezervasyon",
-            sloganMain: "Telefon trafiğini bitirip",
-            sloganHighlight: "takviminizi 7/24 otomatik doldurun.",
+            sloganMain: "Sürekli çalan telefonları susturup",
+            sloganHighlight: "takviminizi otomatik doldurun.",
             introText:
-              "Klinikler veya güzellik salonları için müşterilerin kendi başına randevu alabildiği akıllı dijital sekreter sistemleri.",
+              "Güzellik merkezleri, klinikler veya danışmanlar için müşterilerin kendi başına internetten randevu alabildiği dijital asistan sistemleri.",
             description:
-              "İşletmenizin mesai saatleri dışında bile para kazanmasını sağlar. Personel hatalarını ve randevu iptali karmaşasını tamamen bitirir.",
+              "İşletmenizin mesai saatleri dışında gece bile para kazanmasını sağlar. Randevu unutulmasını veya personelin saati yanlış yazma derdini tamamen bitirir.",
             process:
-              "Müsaitlik durumunu gerçek zamanlı okuyan, SMS hatırlatma altyapısı bulunan kullanıcı dostu bir takvim modülü yazıyoruz.",
+              "Müşteriye otomatik SMS gönderen, sizin takviminizi kontrol ederek çakışmaları önleyen çok kolay kullanımlı bir sistem kuruyoruz.",
           },
         ],
       },
@@ -504,163 +631,199 @@ export const servicesData = [
   },
   {
     id: "yazilim-otomasyon-ai",
-    title: "Yazılım Otomasyonu & Yapay Zeka",
+    title: "Yazılım & Şirket İçi Otomasyon",
     index: "03",
     description:
-      "İşletmenizin iş yükünü sıfıra indiren akıllı takip sistemleri, mağaza yönetim çözümleri ve e-ticaret altyapıları kuruyoruz.",
+      "İşletmenizin iş yükünü sıfıra indiren akıllı takip sistemleri, kasa programları ve toptan/perakende e-ticaret altyapıları kuruyoruz.",
     bgImage: `/assets/servicess/subServicess/business_management_software.webp`,
     subCategories: [
       {
-        title: "İşletme Yönetim & Yapay Zeka",
+        title: "İşletme Yönetim Yazılımları",
         image: `/assets/servicess/subServicess/business_management_software.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
         sloganMain: "İşletmenizin karmaşasını bitirip",
-        sloganHighlight: "otomasyonun gücüne geçin.",
-        metaTags: ["Yapay Zeka (AI)", "Bulut Tabanlı ERP", "Veri Güvenliği"],
+        sloganHighlight: "düzenli bir sisteme geçin.",
         introText:
-          "Tekrarlayan sıkıcı süreçleri, personel kaynaklı insan hatalarını ve finansal kayıt karmaşasını akıllı yazılımlara ve yapay zeka botlarına bırakın.",
-        descriptionTitle: "İşletme Otomasyonu Bize Ne Sağlar?",
+          "Sürekli tekrar eden sıkıcı işleri ve hesap kitap karmaşasını sizin yerinize hatasız tutan akıllı yazılımlar geliştiriyoruz.",
+        descriptionTitle: "Özel Bir Yazılım Bize Ne Sağlar?",
         description:
-          "Operasyonel maliyetlerinizi ciddi ölçüde düşürür, kârlılığınızı net olarak görmenizi sağlar. Yapay zeka destekli yerel (local) sistemlerle gizli şirket verilerinizi dışarı aktarmadan güvende tutarak teknolojik dönüşümünüzü tamamlarsınız.",
+          "Personel hatalarını ve operasyon maliyetlerini düşürür. Güvenli veritabanları sayesinde şirket bilgileriniz sadece size ait kalarak korunur.",
         blockquote:
-          "Rutini robotlara ve yazılıma, yaratıcılığı insanlara bırakın. Modern işletmelerin büyüme sırrı budur.",
-        processTitle: "Yazılım ve Yapay Zeka Entegrasyon Sürecimiz",
+          "Sıkıcı işleri yazılımlara, yaratıcılığı kendinize bırakın. Büyüyen işletmelerin sırrı budur.",
+        processTitle: "Yazılım Kurulum Sürecimiz",
         process:
-          "İşletmenizin mevcut akışını fiziki ve dijital olarak inceliyor, darboğaz yaşanan noktaları tespit edip size özel kontrol panelleri (Dashboard) veya yerel AI modelleri eğitiyoruz.",
+          "İşletmenizin günlük işleyişini yerinde inceliyor, işlerin tıkandığı yerleri bularak patronların her şeyi tek ekranda görebileceği paneller kuruyoruz.",
         processSteps: [
           {
-            title: "İhtiyaç Analizi",
-            text: "Operasyonel hataların ve şirket içi zaman kayıplarının tespiti.",
+            title: "İhtiyaç Belirleme",
+            text: "Şirketinizde zaman kaybedilen ve hata yapılan süreçlerin tespit edilmesi.",
           },
           {
-            title: "Yazılım Geliştirme",
-            text: "Bulut tabanlı (SaaS) ERP veya Yerel AI modellerinin kodlanması.",
+            title: "Yazılımın Kodlanması",
+            text: "Sizin çalışma tarzınıza birebir uyan özel takip programının yazılması.",
           },
           {
-            title: "Eğitim ve Adaptasyon",
-            text: "Yeni nesil yönetim sisteminin personelinize eksiksiz şekilde entegre edilmesi.",
+            title: "Eğitim ve Teslimat",
+            text: "Sistemin bilgisayarlarınıza kurulup, personelinize nasıl kullanılacağının anlatılması.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
-            name: "Stok, Kasa, Adisyon ve Finans",
-            slug: "stok-kasa-adisyon-ve-finans",
+            name: "Restoran Adisyon ve Kasa Programı",
+            slug: "bursa-restoran-pos-adisyon-ve-kasa-yazilimi",
+            seoTitle:
+              "Bursa Restoran POS, Adisyon ve Bulut Kasa Yazılımı | Hexa",
+            seoKeywords: [
+              "Bursa restoran yazılımı",
+              "Bursa adisyon sistemi",
+              "Bursa pos sistemleri",
+              "cafe otomasyonu bursa",
+              "Bursa stok takip yazılımı",
+              "Demirtaş otonom restoran yazılımı",
+            ],
             price: "",
             image: `/assets/servicess/subServicess/business_management_software.webp`,
             heroTitle1: "Adisyon &",
-            heroTitle2: "Finans",
-            sloganMain: "İşletmenizin tüm matematiğini",
+            heroTitle2: "Kasa",
+            sloganMain: "İşletmenizin tüm hesabını",
             sloganHighlight: "tek bir güvenli ekranda toplayın.",
             introText:
-              "Restoranınızın masalarından kasanızdaki nakde kadar her şeyi bulut tabanlı bir ERP sistemiyle kontrol altına alın.",
+              "Restoranınızdaki masalardan, paket servis siparişlerine ve kasanızdaki nakde kadar her şeyi internet üzerinden dilediğiniz yerden takip edin.",
             description:
-              "Hesap kaçaklarını sıfırlar, satılan ürünlerden anlık stok düşer ve size detaylı kar-zarar analizleri sunar.",
+              "Adisyon kaçaklarını sıfırlar, mutfaktan satılan ürünlerin malzemesini stoktan düşer ve akşam hatasız gün sonu raporu verir.",
             process:
-              "Tablet veya masaüstünde donmadan çalışan, pos cihazlarıyla entegre edilebilen, yetki sınırlandırmalı güvenli mimariler kodluyoruz.",
+              "Bilgisayar ve tabletlerde donmadan çalışan, mutfak fişi çıkaran yazıcılarla bağlantılı, sadece yetki verdiğiniz kişilerin görebildiği güvenli sistemler kuruyoruz.",
           },
           {
-            name: "İşletme Otomasyonu",
-            slug: "isletme-otomasyonu",
+            name: "Şirket İçi Otomasyon Yazılımı",
+            slug: "bursa-ozel-isletme-otomasyon-yazilimi",
+            seoTitle:
+              "Bursa Şirket ve İşletme Otomasyon Yazılımları | ERP Çözümleri",
+            seoKeywords: [
+              "Bursa işletme otomasyonu",
+              "Bursa erp yazılımı",
+              "bursa şirket içi yazılım",
+              "bursa operasyon takip yazılımı",
+              "otomasyon sistemleri bursa",
+            ],
             price: "",
             image: `/assets/servicess/automated_business_operations.webp`,
-            heroTitle1: "İşletme",
-            heroTitle2: "Otomasyonu",
-            sloganMain: "Tekrarlayan işleri yazılıma bırakın,",
-            sloganHighlight: "siz işletmenizi büyütmeye odaklanın.",
+            heroTitle1: "Şirket",
+            heroTitle2: "Yazılımı",
+            sloganMain: "Personelin saatlerce uğraştığı işleri",
+            sloganHighlight: "yazılım saniyeler içinde yapsın.",
             introText:
-              "İnsan müdahalesi gerektiren sıkıcı görevleri robotik yazılımlara devrederek operasyon hızınızı katlıyoruz.",
+              "Sürekli insan eliyle yapılan rutin görevleri otomatik yazılımlara devrederek iş hızınızı katlıyoruz.",
             description:
-              "Personel maliyetlerinizi düşürür ve saatler süren raporlama gibi süreçlerin arka planda saliseler içinde otomatik yapılmasını sağlar.",
+              "Saatler süren rapor hazırlama veya stok sayma gibi süreçlerin arka planda otomatik yapılarak personel giderlerinin düşürülmesini sağlar.",
             process:
-              "Mevcut sistemleri birbirine bağlıyor, belirli tetikleyicilerle çalışan özel yazılım senaryoları kurguluyoruz.",
+              "Şirketinizin mevcut Excel dosyalarını veya eski programlarını birbirine bağlayarak her şeyin otomatik yürümesini sağlıyoruz.",
           },
           {
-            name: "Yerelde Çalışan Yapay Zeka (AI)",
-            slug: "yerelde-calisan-yapay-zeka",
+            name: "Yapay Zeka Destekli Asistan",
+            slug: "bursa-yerel-yapay-zeka-ve-ai-entegrasyonu",
+            seoTitle:
+              "Bursa Kurumsal Yapay Zeka (AI) ve Şirket İçi Asistan Geliştirme",
+            seoKeywords: [
+              "Bursa yapay zeka firmaları",
+              "bursa ai entegrasyonu",
+              "şirkete özel yapay zeka bursa",
+              "local llm kurulumu",
+              "bursa teknoloji ajansı",
+            ],
             price: "",
             image: `/assets/servicess/local_ai.webp`,
-            heroTitle1: "Local",
-            heroTitle2: "AI",
-            sloganMain: "Veri gizliliğinizi koruyan,",
-            sloganHighlight: "sadece size özel yapay zeka gücü.",
+            heroTitle1: "Akıllı",
+            heroTitle2: "Asistan",
+            sloganMain: "Sadece size özel, verilerinizi okuyan",
+            sloganHighlight: "şirket içi yapay zeka gücü.",
             introText:
-              "Dış API'lere bağımlı olmayan, şirketinizin mahrem verilerini dışarı sızdırmadan çalışan akıllı AI asistanları.",
+              "İnternetteki şirketlere bilgi sızdırmadan, tamamen sizin ofisinizdeki bilgisayarlarda güvenle çalışan akıllı yapay zeka sistemleri.",
             description:
-              "Yıllardır biriken verilerini okuyabilen, size raporlar sunan bu sistem; sunucu maliyeti yaratmaz ve %100 gizlilik sağlar.",
+              "Yıllardır biriken fatura veya satış verilerinizi saniyeler içinde okuyup size özel raporlar sunar. Verileriniz asla dışarı çıkmaz.",
             process:
-              "Açık kaynaklı dil modellerini (LLM) işletme sistemlerinize gömüyor ve yerel ağınızda stabil çalışmasını sağlıyoruz.",
+              "Dünyanın en gelişmiş açık kaynaklı zeka sistemlerini, işletmenizin kendi ağına kuruyor ve size özel hale getiriyoruz.",
           },
         ],
       },
       {
-        title: "Dijital Satış & Pazaryeri",
+        title: "E-Ticaret & İnternet Satışı",
         image: `/assets/servicess/subServicess/e-commerce.webp`,
-
-        // --- YENİ EKLENEN DİNAMİK ALANLAR ---
         sloganMain: "Ürünlerinizi sınır tanımadan",
         sloganHighlight: "dünyanın her yerine ulaştırın.",
-        metaTags: ["E-Ticaret", "Sanal POS", "Sınırsız Ölçek"],
         introText:
-          "Fiziksel bir mağaza mahallenize hitap ederken, doğru kurgulanmış bir e-ticaret altyapısı size tüm dünyanın kapılarını açar. Sınırları ortadan kaldırıyoruz.",
-        descriptionTitle: "Kusursuz Bir E-Ticaret Deneyimi",
+          "Fiziksel dükkanınız sadece bulunduğunuz mahalleye hitap ederken, doğru kurulmuş bir internet mağazası size tüm dünyanın kapılarını açar.",
+        descriptionTitle: "Kusursuz Bir Satış Deneyimi",
         description:
-          "Müşterilerinize pürüzsüz ve hızlı bir alışveriş deneyimi sunmak, iptalleri azaltır ve sepet (AOV) ortalamasını artırır. Hazır altyapılar veya devasa custom projelerle ticareti tamamen dijitale taşıyoruz.",
+          "Müşterilerinize pürüzsüz ve hızlı bir alışveriş imkanı sunmak, sepeti bırakıp gitmeleri engeller. Ürünlerinizi kolayca kargoya vereceğiniz sistemler kuruyoruz.",
         blockquote:
-          "Yarınları yakalamanın yolu, bugünden ticaretinizi dijital bulutlara taşımaktır.",
-        processTitle: "Kurulum ve Yayına Alma Sürecimiz",
+          "Bugün dükkanınızı internete taşımazsanız, yarın internetteki dükkanlar sizin yerinizi alır.",
+        processTitle: "E-Ticaret Kurulum Sürecimiz",
         process:
-          "Sektörünüzün dinamiklerine, satış yapacağınız ürün adedine ve bütçenize göre hazır sistemler (Shopify/WooCommerce) veya tamamen size özel yazılmış mimariler kurguluyoruz.",
+          "Sektörünüzün durumuna ve bütçenize göre en doğru altyapıyı belirliyor, kredi kartı ödemelerini (Sanal POS) ve kargo anlaşmalarınızı sisteme bağlıyoruz.",
         processSteps: [
           {
-            title: "Altyapı Seçimi",
-            text: "Projenizin boyutuna ve vizyonuna göre en doğru sistemin belirlenmesi.",
+            title: "Sistem Seçimi",
+            text: "Ürün sayınıza ve hedeflerinize göre özel yazılım veya hazır paket altyapısı seçimi.",
           },
           {
-            title: "Ödeme Entegrasyonu",
-            text: "Iyzico, PayTR veya Stripe gibi Sanal POS'ların sisteme entegre edilmesi.",
+            title: "Kredi Kartı Bağlantısı",
+            text: "Taksitli ve güvenli alışveriş imkanı sunan ödeme sistemlerinin kurulması.",
           },
           {
-            title: "Test ve Canlıya Alım",
-            text: "Sepet adımlarının, kargo takiplerinin ve güvenlik protokollerinin testi.",
+            title: "Test ve Açılış",
+            text: "Sepete ürün ekleme ve kargo adımlarının bizzat test edilerek mağazanın açılması.",
           },
         ],
-        // ------------------------------------
-
         items: [
           {
-            name: "E-Ticaret (Hazır altyapı)",
-            slug: "hazir-altyapi-eticaret",
+            name: "Hızlı Kurulum E-Ticaret",
+            slug: "bursa-profesyonel-e-ticaret-sitesi-kurulumu",
+            seoTitle:
+              "Bursa Profesyonel E-Ticaret Sitesi Kurulumu | Hexa Dijital",
+            seoKeywords: [
+              "Bursa e-ticaret sitesi yapan firmalar",
+              "e-ticaret altyapısı bursa",
+              "Bursa sanal mağaza kurulumu",
+              "bursa woocommerce uzmanı",
+              "e-ticaret ajansı bursa",
+            ],
             price: "25.000",
             image: `/assets/servicess/e-commerce_website.webp`,
             heroTitle1: "E-Ticaret",
-            heroTitle2: "Sistemleri",
-            sloganMain: "Ürünlerinizi sınır tanımadan",
-            sloganHighlight: "dünyanın her yerine ulaştırın.",
+            heroTitle2: "Sitesi",
+            sloganMain: "Mağazanız hiç kapanmasın,",
+            sloganHighlight: "7/24 satış yapmaya başlayın.",
             introText:
-              "Güvenli online ödeme sistemleri ve anlaşmalı kargo entegrasyonlarıyla donatılmış, yönetim paneli güçlü satış platformları.",
+              "Güvenli kredi kartı ödemeleri ve kargo takip sistemleriyle donatılmış, kolay kullanılabilen satış platformları.",
             description:
-              "Mağazanızın kapıları 7/24 açık kalır. Hazır ve test edilmiş altyapılar sayesinde güvenlik açıkları yaşamadan pazarlamaya odaklanırsınız.",
+              "Mağazanız gece gündüz açık kalır. Test edilmiş, sorunsuz çalışan altyapılar kullandığımız için siz sadece kargolarınızı hazırlamaya odaklanırsınız.",
             process:
-              "WooCommerce gibi global e-ticaret altyapılarını sitenize kuruyor; Sanal POS, stok varyasyonları modüllerini entegre ediyoruz.",
+              "Dünyanın en çok kullanılan e-ticaret sistemlerini kuruyor; renk, beden gibi ürün seçeneklerini ayarlayıp ödeme altyapınızı bağlıyoruz.",
           },
           {
-            name: "Özel E-Ticaret (Custom)",
-            slug: "ozel-eticaret-custom",
+            name: "Özel E-Ticaret ve Toptan Satış",
+            slug: "bursa-ozel-yazilim-b2b-e-ticaret-ve-pazaryeri",
+            seoTitle:
+              "Bursa Özel Yazılım E-Ticaret, B2B ve Pazaryeri Sistemleri",
+            seoKeywords: [
+              "Bursa özel e-ticaret yazılımı",
+              "Bursa pazaryeri yazılımı",
+              "bursa b2b yazılım firması",
+              "bursa c2c e-ticaret",
+              "çoklu satıcı e-ticaret bursa",
+            ],
             price: "",
             image: `/assets/servicess/custom_e-commerce.webp`,
-            heroTitle1: "Custom",
-            heroTitle2: "Pazaryeri",
-            sloganMain: "Sınırları olmayan, devasa",
-            sloganHighlight: "kullanıcı trafiğine hazır mimariler.",
+            heroTitle1: "Özel",
+            heroTitle2: "E-Ticaret",
+            sloganMain: "Size özel bayilik ağları ve",
+            sloganHighlight: "dev internet pazarları kurun.",
             introText:
-              "Bayilik sistemleri, çoklu satıcı barındıran pazaryeri kurguları veya kuralları sizin koyduğunuz özel projeler.",
+              "Sadece size özel toptan (bayi) satış sistemleri, farklı satıcıların dükkan açabildiği devasa pazar yerleri veya kurallarını sizin belirlediğiniz platformlar.",
             description:
-              "Hazır sistemlerin yetersiz kaldığı senaryolarda; yüz binlerce ürünü ve eşzamanlı trafiği kaldıran tamamen özel yazılımlardır.",
+              "Hazır paket sistemlerin gücünün yetmediği; yüz binlerce ürünü ve eşzamanlı trafiği hiçbir şekilde çökmeden kaldıran çok güçlü yazılımlardır.",
             process:
-              "Frontend'i React mimarisiyle kodlarken, Backend'i esnek veritabanı yönetim sistemleriyle operasyonunuza göre inşa ediyoruz.",
+              "Ziyaretçilerin gördüğü ekranları saniyeler içinde açılacak şekilde tasarlarken, arka planda tüm finansal hareketleri yönetecek büyük bir sistem inşa ediyoruz.",
           },
         ],
       },

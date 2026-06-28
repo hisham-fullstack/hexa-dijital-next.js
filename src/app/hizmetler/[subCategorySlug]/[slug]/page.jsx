@@ -1,3 +1,5 @@
+// src/app/hizmetler/[subCategorySlug]/[slug]/page.jsx (Dosya yolun)
+
 import ServiceDetail from "@/components/sections/Services/ServiceDetail";
 import { servicesData } from "@/data/servicesData";
 
@@ -53,25 +55,27 @@ export async function generateMetadata({ params }) {
     return { title: "Hizmet Bulunamadı | Hexa Dijital" };
   }
 
-  const cleanSlogan = serviceItem.sloganHighlight
-    ? serviceItem.sloganHighlight.replace(".", "")
-    : "";
+  // YENİ: servicesData'daki 'seoTitle' ve 'seoKeywords' alanlarını doğrudan Google'a veriyoruz
+  const pageTitle =
+    serviceItem.seoTitle || `Bursa ${serviceItem.name} | Hexa Dijital`;
+
+  // Eğer özel seoKeywords yazılmışsa onu al, yoksa otomatik oluştur
+  const pageKeywords = serviceItem.seoKeywords || [
+    `bursa ${serviceItem.name.toLowerCase()}`,
+    `${parentCategory.title.toLowerCase()} bursa`,
+    "hexa dijital bursa",
+    "bursa dijital dönüşüm",
+  ];
 
   return {
-    title: `${serviceItem.name} | Hexa Dijital Bursa`,
+    title: pageTitle,
     description: serviceItem.description,
-    keywords: [
-      `${serviceItem.name.toLowerCase()} bursa`,
-      `${parentCategory.title.toLowerCase()} ajansı`,
-      "hexa dijital bursa",
-      "bursa dijital dönüşüm",
-      cleanSlogan,
-    ].filter(Boolean),
+    keywords: pageKeywords,
     alternates: {
       canonical: `https://hexadijital.com/hizmetler/${subCategorySlug}/${slug}`,
     },
     openGraph: {
-      title: `${serviceItem.heroTitle1} ${serviceItem.heroTitle2} | Hexa Dijital`,
+      title: pageTitle,
       description: serviceItem.introText,
       url: `https://hexadijital.com/hizmetler/${subCategorySlug}/${slug}`,
       siteName: "Hexa Dijital",
@@ -80,16 +84,15 @@ export async function generateMetadata({ params }) {
           url: `https://hexadijital.com${serviceItem.image}`,
           width: 1200,
           height: 630,
-          alt: `${serviceItem.name} - Hexa Dijital`,
+          alt: pageTitle,
         },
       ],
       locale: "tr_TR",
       type: "article",
     },
-    // EKSİK 1 GİDERİLDİ: Twitter (X) Özel Paylaşım Kartı (Büyük Görsel Destekli)
     twitter: {
       card: "summary_large_image",
-      title: `${serviceItem.name} | Hexa Dijital`,
+      title: pageTitle,
       description: serviceItem.introText,
       images: [`https://hexadijital.com${serviceItem.image}`],
     },
@@ -102,7 +105,6 @@ export default function ServiceDetailPage({ params }) {
 
   let serviceItem = null;
 
-  // JSON-LD için veriyi bileşen içinde tekrar buluyoruz (Next.js bunu cache'lediği için performans kaybı sıfırdır)
   for (const cat of servicesData) {
     for (const sub of cat.subCategories) {
       const found = sub.items.find((item) => item.slug === slug);
@@ -114,12 +116,16 @@ export default function ServiceDetailPage({ params }) {
     if (serviceItem) break;
   }
 
-  // EKSİK 2 GİDERİLDİ: Sadece bu hizmete özel Google Zengin Sonuç (Rich Snippet) Şeması
+  // JSON-LD (Yapay Zeka Şeması) için de Bursa odaklı SEO ismini kullanıyoruz
+  const schemaName = serviceItem?.seoTitle
+    ? serviceItem.seoTitle.split(" |")[0]
+    : `Bursa ${serviceItem?.name}`;
+
   const jsonLd = serviceItem
     ? {
         "@context": "https://schema.org",
         "@type": "Service",
-        name: serviceItem.name,
+        name: schemaName,
         description: serviceItem.description,
         provider: {
           "@type": "ProfessionalService",
@@ -128,15 +134,13 @@ export default function ServiceDetailPage({ params }) {
         },
         url: `https://hexadijital.com/hizmetler/${subCategorySlug}/${slug}`,
         image: `https://hexadijital.com${serviceItem.image}`,
-        // Eğer veritabanında net bir fiyat yazıyorsa (Örn: 5.000) bunu Google'a fiyat olarak ("Offer") bildiririz.
-        // Fiyat "Fiyat Alın" veya boş ise bu kısmı eklemez, hata verdirtmez.
         ...(serviceItem.price &&
         serviceItem.price !== "Fiyat Alın" &&
         serviceItem.price !== ""
           ? {
               offers: {
                 "@type": "Offer",
-                price: serviceItem.price.replace(".", ""), // Google sayıları düz ister: 5.000 -> 5000
+                price: serviceItem.price.replace(".", ""),
                 priceCurrency: "TRY",
                 url: `https://hexadijital.com/hizmetler/${subCategorySlug}/${slug}`,
               },
@@ -147,7 +151,6 @@ export default function ServiceDetailPage({ params }) {
 
   return (
     <>
-      {/* JSON-LD Script'ini HTML kodlarının arkasına gizlice basıyoruz */}
       {jsonLd && (
         <script
           type="application/ld+json"

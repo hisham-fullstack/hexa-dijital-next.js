@@ -33,6 +33,7 @@ export async function generateMetadata({ params }) {
   const { subCategorySlug } = params;
 
   let foundSubCategory = null;
+  let parentCategory = null;
 
   // URL'deki slug ile servicesData içindeki subCategories başlıklarını eşleştiriyoruz
   for (const cat of servicesData) {
@@ -41,6 +42,7 @@ export async function generateMetadata({ params }) {
     );
     if (sub) {
       foundSubCategory = sub;
+      parentCategory = cat;
       break;
     }
   }
@@ -49,24 +51,35 @@ export async function generateMetadata({ params }) {
     return { title: "Kategori Bulunamadı | Hexa Dijital" };
   }
 
-  const title = `${foundSubCategory.title} Çözümleri | Hexa Dijital Bursa`;
+  // BUZDAĞI TAKTİĞİ: Arayüzde "Web Siteleri" yazar, Google'da "Bursa Web Siteleri Ajansı" çıkar
+  const title =
+    foundSubCategory.seoTitle ||
+    `Bursa ${foundSubCategory.title} Ajansı | Hexa Dijital`;
+
   const description =
     foundSubCategory.description || foundSubCategory.introText;
   const cleanHighlight = foundSubCategory.sloganHighlight
     ? foundSubCategory.sloganHighlight.replace(".", "")
     : "";
 
-  return {
-    title,
-    description,
-    keywords: [
-      `${foundSubCategory.title.toLowerCase()} bursa`,
+  // Arama motorları için nokta atışı mahalle/şehir odaklı anahtar kelimeler
+  const keywords =
+    foundSubCategory.seoKeywords ||
+    [
+      `bursa ${foundSubCategory.title.toLowerCase()}`,
+      `bursa ${foundSubCategory.title.toLowerCase()} ajansı`,
+      `${parentCategory?.title.toLowerCase()} bursa`,
       "bursa dijital ajans",
       "bursa tasarım ve yazılım",
       "hexa dijital bursa",
       cleanHighlight,
       ...(foundSubCategory.metaTags || []),
-    ].filter(Boolean),
+    ].filter(Boolean);
+
+  return {
+    title,
+    description,
+    keywords,
     alternates: {
       canonical: `https://hexadijital.com/hizmetler/${subCategorySlug}`,
     },
@@ -80,7 +93,7 @@ export async function generateMetadata({ params }) {
           url: `https://hexadijital.com${foundSubCategory.image}`,
           width: 1200,
           height: 630,
-          alt: `${foundSubCategory.title} - Hexa Dijital`,
+          alt: title, // Görsel isimleri bile SEO ile eşleştirildi
         },
       ],
       locale: "tr_TR",
@@ -112,18 +125,25 @@ export default function SubCategoryPage({ params }) {
   }
 
   // Google Botları için Yapılandırılmış Dizin Haritası (ItemList)
+  const schemaName = foundSubCategory?.seoTitle
+    ? foundSubCategory.seoTitle.split(" |")[0]
+    : `Bursa ${foundSubCategory?.title} Hizmetleri`;
+
   const jsonLd = foundSubCategory
     ? {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        name: `${foundSubCategory.title} Hizmet Paketi ve Çözümleri`,
-        description: foundSubCategory.description,
+        name: schemaName,
+        description: foundSubCategory.description || foundSubCategory.introText,
         url: `https://hexadijital.com/hizmetler/${subCategorySlug}`,
         numberOfItems: foundSubCategory.items?.length || 0,
+        // Dizin içindeki her bir alt hizmeti de Google'a "Bursa" başlığıyla bildiriyoruz
         itemListElement: foundSubCategory.items?.map((item, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          name: item.name,
+          name: item.seoTitle
+            ? item.seoTitle.split(" |")[0]
+            : `Bursa ${item.name}`,
           url: `https://hexadijital.com/hizmetler/${subCategorySlug}/${item.slug}`,
         })),
       }
@@ -131,7 +151,7 @@ export default function SubCategoryPage({ params }) {
 
   return (
     <>
-      {/* Google Yapılandırılmış Veri Etiketi */}
+      {/* Google Yapılandırılmış Veri Etiketi (Rich Snippets) */}
       {jsonLd && (
         <script
           type="application/ld+json"
